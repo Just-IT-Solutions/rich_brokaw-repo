@@ -1,0 +1,1245 @@
+{
+ "content": [
+  {
+   "id": "489396b",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "flex_align_items": "center",
+    "flex_justify_content": "flex-start",
+    "flex_gap": {
+     "unit": "px",
+     "size": 16,
+     "column": "16",
+     "row": "16",
+     "isLinked": true
+    },
+    "boxed_width": {
+     "unit": "px",
+     "size": 860,
+     "sizes": []
+    },
+    "background_background": "classic",
+    "background_color": "#1F2A44",
+    "padding": {
+     "unit": "px",
+     "top": "90",
+     "right": "20",
+     "bottom": "80",
+     "left": "20",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "20",
+     "bottom": "48",
+     "left": "20",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "a32ade6",
+     "elType": "widget",
+     "settings": {
+      "html": "<style>\n/* ===== Richard Brokaw – interactive book sample (rb-book) ===== */\n.rb-book { --paper: #FBF8F1; --paper-edge: #E9E2D2; --ink: #2B2B2B; --rule: #B8893B; --navy: #1F2A44;\n  position: relative; width: 100%; display: flex; flex-direction: column; align-items: center; gap: 14px; }\n.rb-book .rb-src { display: none; }\n.rb-clip { width: 100%; display: flex; justify-content: center; overflow: visible; padding-block: 8px 22px; }\n.rb-book.is-narrow .rb-clip { overflow: hidden; }\n.rb-stage { position: relative; width: calc(var(--w) * 2); height: calc(var(--w) * 1.5); perspective: 2200px; max-width: 100%; }\n.rb-book.is-narrow .rb-stage { width: var(--w); }\n\n.rb-book3d { position: absolute; top: 0; left: var(--w); width: var(--w); height: 100%;\n  transform-style: preserve-3d; transition: transform .7s cubic-bezier(.3,.7,.2,1); }\n.rb-book.is-narrow .rb-book3d { left: 0; }\n.rb-book.is-closed .rb-book3d { transform: translateX(calc(var(--w) * -0.5)); }\n.rb-book.is-narrow.is-closed .rb-book3d { transform: none; }\n\n/* page block under the leaves: thickness + shadow */\n.rb-block { position: absolute; inset: 0; background: var(--paper); border-radius: 0 3px 3px 0;\n  box-shadow: 0 18px 40px -12px rgba(0,0,0,.45), inset 0 0 0 1px var(--paper-edge); }\n.rb-block::after { content: \"\"; position: absolute; top: 3px; bottom: 3px; right: -7px; width: 7px; border-radius: 0 2px 2px 0;\n  background: repeating-linear-gradient(90deg, #f3eee3 0 1px, #d9d0bd 1px 2px); box-shadow: 2px 0 4px rgba(0,0,0,.15); }\n\n.rb-leaf { position: absolute; inset: 0; transform-origin: left center; transform-style: preserve-3d;\n  transition: transform .9s cubic-bezier(.45,.05,.2,1); cursor: pointer; }\n.rb-leaf.is-flipped { transform: rotateY(-180deg); }\n.rb-face { position: absolute; inset: 0; backface-visibility: hidden; -webkit-backface-visibility: hidden; overflow: hidden; }\n.rb-face.back { transform: rotateY(180deg); }\n.rb-face.paper { background: var(--paper); color: var(--ink); }\n.rb-face.front.paper { border-radius: 0 3px 3px 0; box-shadow: inset 14px 0 18px -14px rgba(0,0,0,.28); }\n.rb-face.back.paper { border-radius: 3px 0 0 3px; box-shadow: inset -14px 0 18px -14px rgba(0,0,0,.28); }\n.rb-face.cover { border-radius: 2px 4px 4px 2px; background: var(--navy); }\n.rb-face.cover img { width: 100%; height: 100%; object-fit: cover; display: block; }\n.rb-face.cover::after { content: \"\"; position: absolute; inset: 0; pointer-events: none;\n  background: linear-gradient(90deg, rgba(0,0,0,.35) 0, rgba(255,255,255,.12) 3%, rgba(0,0,0,0) 7%, rgba(0,0,0,0) 94%, rgba(0,0,0,.18) 100%); }\n.rb-face.inside-cover { background: #EFE8D8; }\n\n/* hover peek: lift the cover when closed */\n@media (hover: hover) {\n  .rb-book.is-closed .rb-stage:hover .rb-leaf.is-cover { transform: rotateY(-32deg); }\n}\n.rb-book.is-closed .rb-leaf.is-cover:focus-visible { outline: 3px solid #D4AE6B; outline-offset: 4px; }\n\n/* page typography: sizes scale with the page width */\n.rb-pg { position: absolute; inset: 0; padding: calc(var(--w) * .1) calc(var(--w) * .09) calc(var(--w) * .12);\n  font: calc(var(--w) * .043)/1.6 Georgia, \"Times New Roman\", serif; display: flex; flex-direction: column; gap: .7em; }\n.rb-pg h3 { font: 700 1.5em/1.2 \"Playfair Display\", Georgia, serif; color: var(--navy); margin: 0; text-wrap: balance; }\n.rb-pg h4 { font: 700 .72em/1.3 Lato, Arial, sans-serif; letter-spacing: .2em; text-transform: uppercase; color: var(--rule); margin: 0; }\n.rb-pg p { margin: 0; }\n.rb-pg .rb-ph { border: 1px dashed #C9BFA9; padding: .8em; color: #7a7364; font-style: italic; flex: 1; display: grid; place-items: center; text-align: center; }\n.rb-pg .rb-folio { position: absolute; bottom: calc(var(--w) * .05); left: 0; right: 0; text-align: center; font-size: .75em; color: #9a9282; }\n.rb-pg.title { align-items: center; justify-content: center; text-align: center; }\n.rb-pg.title hr { width: 30%; border: 0; border-top: 1px solid var(--rule); margin: .4em 0; }\n.rb-pg.title .sub { font-style: italic; color: #5A6070; font-size: .9em; }\n.rb-pg.end { align-items: center; justify-content: center; text-align: center; }\n.rb-pg.end a { display: inline-block; margin-top: .6em; background: var(--rule); color: #fff; text-decoration: none;\n  font: 700 .72em/1 Lato, Arial, sans-serif; letter-spacing: .15em; text-transform: uppercase; padding: 1em 1.4em; border-radius: 2px; }\n\n/* controls */\n.rb-hint { font: 700 12px/1.4 Lato, Arial, sans-serif; letter-spacing: 2px; text-transform: uppercase; color: #5A6070; text-align: center; }\n.rb-controls { display: flex; align-items: center; justify-content: center; gap: 10px; flex-wrap: wrap; }\n.rb-controls[hidden] { display: none !important; }\n.rb-controls button { font: 700 12px/1 Lato, Arial, sans-serif; letter-spacing: 1.5px; text-transform: uppercase; cursor: pointer;\n  background: transparent; color: var(--navy); border: 2px solid var(--navy); padding: 11px 16px; border-radius: 2px; }\n.rb-controls button:hover:not(:disabled) { background: var(--navy); color: #fff; }\n.rb-controls button:disabled { opacity: .35; cursor: default; }\n.rb-controls button:focus-visible { outline: 3px solid #D4AE6B; outline-offset: 3px; }\n.rb-count { font: 400 14px/1 Lato, Arial, sans-serif; color: #5A6070; min-width: 9em; text-align: center; font-variant-numeric: tabular-nums; }\n.rb-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }\n\n@media (prefers-reduced-motion: reduce) { .rb-book3d, .rb-leaf { transition: none; } }\n\n\n.bk-hero { text-align: center; }\n.bk-hero h1 { font-size: clamp(34px, 4.6vw, 50px); }\n.bk-hero blockquote { margin: 0 auto; max-width: 40ch; font: italic 400 clamp(19px, 2.2vw, 22px)/1.5 Playfair Display, Georgia, serif; color: #D9DCE3; }\n.bk-jump { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; margin-top: 8px; }\n.bk { padding-block: 80px 90px; }\n.bk.alt { background: #F7F3EC; }\n.bk-head { text-align: center; display: flex; flex-direction: column; align-items: center; gap: 10px; margin-bottom: 26px; }\n.bk-head h2 { font-size: clamp(30px, 4vw, 42px); color: #1F2A44; }\n.bk-head .sub { font: italic 400 clamp(17px, 2vw, 20px)/1.45 Playfair Display, Georgia, serif; color: #5A6070; max-width: 46ch; }\n.bk-body { max-width: 680px; margin: 30px auto 0; display: flex; flex-direction: column; align-items: center; gap: 16px; text-align: center; }\n.bk-body .copy { display: flex; flex-direction: column; gap: 14px; }\n.rb-buy { min-width: 260px; text-align: center; }\n.rb-buy.is-soon { background: transparent; color: #5A6070; border-color: #C9BFA9; cursor: default; }\n.rb-buy.is-soon:hover { background: transparent; border-color: #C9BFA9; }\n.rb-note { font-size: 14px; color: #5A6070; }\n.rb-note a { color: #B8893B; font-weight: 700; }\n.rb-details { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 28px; margin: 4px 0 0; font-size: 14px; color: #5A6070; }\n.rb-details div { display: flex; gap: 8px; }\n.rb-details dt { font-weight: 700; color: #1F2A44; }\n.rb-details dd { margin: 0; font-variant-numeric: tabular-nums; }\n.bk-close { text-align: center; }\n.bk-close h2 { font-size: clamp(26px, 3.4vw, 34px); color: #1F2A44; }\n\n</style>\n<script>\n/* Richard Brokaw – interactive book sample. Each .rb-book holds a cover image and a hidden list of .rb-page sections. */\n(function () {\n  function setup(root) {\n    var src = root.querySelector('.rb-src');\n    var pages = [].slice.call(src.querySelectorAll('.rb-page')).map(function (p) { return p.innerHTML; });\n    var classes = [].slice.call(src.querySelectorAll('.rb-page')).map(function (p) { return p.getAttribute('data-kind') || ''; });\n    var cover = root.getAttribute('data-cover'), alt = root.getAttribute('data-cover-alt') || '';\n    var title = root.getAttribute('data-title') || 'this book';\n\n    var clip = document.createElement('div'); clip.className = 'rb-clip';\n    var stage = document.createElement('div'); stage.className = 'rb-stage';\n    var book = document.createElement('div'); book.className = 'rb-book3d';\n    stage.appendChild(book); clip.appendChild(stage);\n    var hint = document.createElement('p'); hint.className = 'rb-hint';\n    var controls = document.createElement('div'); controls.className = 'rb-controls'; controls.hidden = true;\n    controls.innerHTML = '<button type=\"button\" data-act=\"prev\">← Previous</button><span class=\"rb-count\" aria-live=\"polite\"></span>' +\n      '<button type=\"button\" data-act=\"next\">Next →</button><button type=\"button\" data-act=\"close\">Close Book</button>';\n    root.insertBefore(controls, src); root.insertBefore(hint, controls); root.insertBefore(clip, hint);\n\n    var leaves = [], cur = 0, narrow = null, list = pages, kinds = classes;\n\n    function face(side, html, kind) {\n      var f = document.createElement('div');\n      if (kind === 'cover') { f.className = 'rb-face front cover'; f.innerHTML = '<img src=\"' + cover + '\" alt=\"' + alt.replace(/\"/g, '&quot;') + '\">'; return f; }\n      f.className = 'rb-face paper ' + side + (kind === 'blank-cover' ? ' inside-cover' : '');\n      if (html != null) f.innerHTML = '<div class=\"rb-pg ' + (kind || '') + '\">' + html + '</div>';\n      return f;\n    }\n\n    function build() {\n      book.innerHTML = '<div class=\"rb-block\"></div>';\n      leaves = [];\n      var spec = [];\n      list = pages.slice(); kinds = classes.slice();\n      // in a two-page spread the last page must land on a right-hand page\n      if (!narrow && list.length % 2) { list.splice(list.length - 1, 0, ''); kinds.splice(kinds.length - 1, 0, ''); }\n      var pages_ = list, classes_ = kinds;\n      if (!narrow) {                      // spread: cover | title, then two pages per leaf\n        spec.push([['cover'], [pages_[0], classes_[0]]]);\n        for (var i = 1; i < pages_.length; i += 2) spec.push([[pages_[i], classes_[i]], i + 1 < pages_.length ? [pages_[i + 1], classes_[i + 1]] : [null, '']]);\n      } else {                            // single page: every page on a front face\n        spec.push([['cover'], [null, 'blank-cover']]);\n        for (var j = 0; j < pages_.length; j++) spec.push([[pages_[j], classes_[j]], [null, '']]);\n      }\n      spec.forEach(function (s, idx) {\n        var leaf = document.createElement('div'); leaf.className = 'rb-leaf';\n        var front = s[0][0] === 'cover' ? face('front', null, 'cover') : face('front', s[0][0], s[0][1]);\n        var back = face('back', s[1][0], s[1][1]);\n        leaf.appendChild(front); leaf.appendChild(back);\n        leaf.addEventListener('click', function () { if (leaf.classList.contains('is-flipped')) go(cur - 1); else go(cur + 1); });\n        if (idx === 0) { leaf.classList.add('is-cover'); leaf.tabIndex = 0; leaf.setAttribute('role', 'button'); leaf.setAttribute('aria-label', 'Open a sample of ' + title); }\n        book.appendChild(leaf); leaves.push(leaf);\n      });\n      render(); z();\n    }\n\n    function z() {\n      var n = leaves.length;\n      leaves.forEach(function (l, i) { l.style.zIndex = l.classList.contains('is-flipped') ? i + 1 : n - i + 1; });\n    }\n\n    function render() {\n      var max = leaves.length - 1, total = list.length;\n      leaves.forEach(function (l, i) {\n        var flipped = i < cur; l.classList.toggle('is-flipped', flipped);\n        // only the two faces in view are exposed to screen readers\n        var visible = narrow ? (i === cur) : (i === cur || i === cur - 1);\n        l.setAttribute('aria-hidden', cur === 0 ? (i === 0 ? 'false' : 'true') : (visible ? 'false' : 'true'));\n      });\n      root.classList.toggle('is-closed', cur === 0);\n      leaves[0].tabIndex = cur === 0 ? 0 : -1;\n      hint.hidden = cur !== 0;\n      hint.textContent = (window.matchMedia('(hover: hover)').matches ? 'Click' : 'Tap') + ' the book to read a sample';\n      controls.hidden = cur === 0;\n      var prev = controls.querySelector('[data-act=prev]'), next = controls.querySelector('[data-act=next]');\n      var had = document.activeElement;\n      prev.disabled = cur <= 1; next.disabled = cur >= max;\n      // keep keyboard focus inside the reader when a button turns off\n      if (had === next && next.disabled) prev.focus(); else if (had === prev && prev.disabled) next.focus();\n      var label;\n      if (narrow) label = 'Page ' + cur + ' of ' + total;\n      else { var a = 2 * cur - 1, b = Math.min(2 * cur, total); label = (a === b ? 'Page ' + a : 'Pages ' + a + '–' + b) + ' of ' + total; }\n      controls.querySelector('.rb-count').textContent = label;\n    }\n\n    function go(to) {\n      var max = leaves.length - 1;\n      to = Math.max(0, Math.min(max, to));\n      if (to === cur) return;\n      var n = leaves.length;\n      // leaves that change side ride on top while they turn\n      if (to > cur) for (var i = cur; i < to; i++) leaves[i].style.zIndex = n + 10 + i;\n      else for (var j = cur - 1; j >= to; j--) leaves[j].style.zIndex = n + 10 + (n - j);\n      cur = to;\n      render();\n      clearTimeout(go.t); go.t = setTimeout(z, 950);\n    }\n\n    controls.addEventListener('click', function (e) {\n      var a = e.target.getAttribute('data-act');\n      if (a === 'prev') go(cur - 1);\n      else if (a === 'next') go(cur + 1);\n      else if (a === 'close') { go(0); leaves[0].focus({ preventScroll: true }); }\n    });\n    root.addEventListener('keydown', function (e) {\n      if (e.key === 'ArrowRight') { go(cur + 1); e.preventDefault(); }\n      else if (e.key === 'ArrowLeft') { go(cur - 1); e.preventDefault(); }\n      else if ((e.key === 'Enter' || e.key === ' ') && e.target === leaves[0] && cur === 0) { go(1); e.preventDefault(); }\n      else if (e.key === 'Escape' && cur > 0) go(0);\n    });\n    var sx = null;\n    stage.addEventListener('touchstart', function (e) { sx = e.touches[0].clientX; }, { passive: true });\n    stage.addEventListener('touchend', function (e) {\n      if (sx == null || cur === 0) return; var dx = e.changedTouches[0].clientX - sx; sx = null;\n      if (Math.abs(dx) > 40) go(cur + (dx < 0 ? 1 : -1));\n    });\n\n    function size() {\n      var avail = root.clientWidth;\n      var nowNarrow = avail < 560;\n      var w = nowNarrow ? Math.min(avail - 16, 360) : Math.min(Math.floor((avail - 24) / 2), 340);\n      root.style.setProperty('--w', w + 'px');\n      root.classList.toggle('is-narrow', nowNarrow);\n      if (nowNarrow !== narrow) {\n        var wasOpen = cur > 0; narrow = nowNarrow; cur = 0; build();\n        if (wasOpen) go(1);\n      }\n    }\n    size();\n    if ('ResizeObserver' in window) new ResizeObserver(size).observe(root); else window.addEventListener('resize', size);\n  }\n  function init() { [].forEach.call(document.querySelectorAll('.rb-book:not([data-ready])'), function (b) { b.setAttribute('data-ready', '1'); setup(b); }); }\n  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();\n  window.rbBookInit = init;\n})();\n\n</script>"
+     },
+     "elements": [],
+     "widgetType": "html"
+    },
+    {
+     "id": "836f136",
+     "elType": "widget",
+     "settings": {
+      "title": "Books",
+      "header_size": "p",
+      "align": "center",
+      "title_color": "#B8893B",
+      "typography_typography": "custom",
+      "typography_font_family": "Lato",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 14,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 13,
+       "sizes": []
+      },
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": 3,
+       "sizes": []
+      },
+      "typography_text_transform": "uppercase",
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.4,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "heading"
+    },
+    {
+     "id": "fc63205",
+     "elType": "widget",
+     "settings": {
+      "title": "Two Books. One Burden.",
+      "header_size": "h1",
+      "align": "center",
+      "title_color": "#FFFFFF",
+      "typography_typography": "custom",
+      "typography_font_family": "Playfair Display",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 50,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 34,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.2,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "heading"
+    },
+    {
+     "id": "a3618d9",
+     "elType": "widget",
+     "settings": {
+      "color": "#B8893B",
+      "weight": {
+       "unit": "px",
+       "size": 2,
+       "sizes": []
+      },
+      "width": {
+       "unit": "px",
+       "size": 80,
+       "sizes": []
+      },
+      "align": "center",
+      "gap": {
+       "unit": "px",
+       "size": 6,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "divider"
+    },
+    {
+     "id": "716ec0b",
+     "elType": "widget",
+     "settings": {
+      "title": "One book asks us to listen to what Jesus is saying. The other asks us to consider what God is accomplishing while we wait.",
+      "header_size": "p",
+      "align": "center",
+      "title_color": "#D9DCE3",
+      "typography_typography": "custom",
+      "typography_font_family": "Playfair Display",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 22,
+       "sizes": []
+      },
+      "typography_font_weight": "400",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 19,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.5,
+       "sizes": []
+      },
+      "typography_font_style": "italic"
+     },
+     "elements": [],
+     "widgetType": "heading"
+    },
+    {
+     "id": "37c860d",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "flex_align_items": "center",
+      "flex_justify_content": "center",
+      "flex_gap": {
+       "unit": "px",
+       "size": 14,
+       "column": "14",
+       "row": "14",
+       "isLinked": true
+      },
+      "flex_direction_mobile": "column",
+      "flex_wrap": "wrap"
+     },
+     "elements": [
+      {
+       "id": "05c90c7",
+       "elType": "widget",
+       "settings": {
+        "text": "My Letter to You",
+        "link": {
+         "url": "#my-letter-to-you",
+         "is_external": "",
+         "nofollow": "",
+         "custom_attributes": ""
+        },
+        "align": "center",
+        "align_mobile": "center",
+        "background_color": "rgba(0,0,0,0)",
+        "button_text_color": "#FFFFFF",
+        "button_background_hover_color": "#FFFFFF",
+        "hover_color": "#1F2A44",
+        "border_border": "solid",
+        "border_width": {
+         "unit": "px",
+         "top": "2",
+         "right": "2",
+         "bottom": "2",
+         "left": "2",
+         "isLinked": true
+        },
+        "border_color": "#FFFFFF",
+        "button_hover_border_color": "#FFFFFF",
+        "border_radius": {
+         "unit": "px",
+         "top": "2",
+         "right": "2",
+         "bottom": "2",
+         "left": "2",
+         "isLinked": true
+        },
+        "text_padding": {
+         "unit": "px",
+         "top": "16",
+         "right": "32",
+         "bottom": "16",
+         "left": "32",
+         "isLinked": false
+        },
+        "typography_typography": "custom",
+        "typography_font_family": "Lato",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 14,
+         "sizes": []
+        },
+        "typography_font_weight": "700",
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 13,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 2,
+         "sizes": []
+        },
+        "typography_text_transform": "uppercase"
+       },
+       "elements": [],
+       "widgetType": "button"
+      },
+      {
+       "id": "47a5b34",
+       "elType": "widget",
+       "settings": {
+        "text": "Why the Rapture Tarries",
+        "link": {
+         "url": "#why-the-rapture-tarries",
+         "is_external": "",
+         "nofollow": "",
+         "custom_attributes": ""
+        },
+        "align": "center",
+        "align_mobile": "center",
+        "background_color": "rgba(0,0,0,0)",
+        "button_text_color": "#FFFFFF",
+        "button_background_hover_color": "#FFFFFF",
+        "hover_color": "#1F2A44",
+        "border_border": "solid",
+        "border_width": {
+         "unit": "px",
+         "top": "2",
+         "right": "2",
+         "bottom": "2",
+         "left": "2",
+         "isLinked": true
+        },
+        "border_color": "#FFFFFF",
+        "button_hover_border_color": "#FFFFFF",
+        "border_radius": {
+         "unit": "px",
+         "top": "2",
+         "right": "2",
+         "bottom": "2",
+         "left": "2",
+         "isLinked": true
+        },
+        "text_padding": {
+         "unit": "px",
+         "top": "16",
+         "right": "32",
+         "bottom": "16",
+         "left": "32",
+         "isLinked": false
+        },
+        "typography_typography": "custom",
+        "typography_font_family": "Lato",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 14,
+         "sizes": []
+        },
+        "typography_font_weight": "700",
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 13,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 2,
+         "sizes": []
+        },
+        "typography_text_transform": "uppercase"
+       },
+       "elements": [],
+       "widgetType": "button"
+      }
+     ],
+     "isInner": true
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "8155943",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "flex_align_items": "center",
+    "flex_justify_content": "flex-start",
+    "flex_gap": {
+     "unit": "px",
+     "size": 14,
+     "column": "14",
+     "row": "14",
+     "isLinked": true
+    },
+    "boxed_width": {
+     "unit": "px",
+     "size": 760,
+     "sizes": []
+    },
+    "background_background": "classic",
+    "background_color": "#F7F3EC",
+    "padding": {
+     "unit": "px",
+     "top": "80",
+     "right": "20",
+     "bottom": "90",
+     "left": "20",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "20",
+     "bottom": "48",
+     "left": "20",
+     "isLinked": false
+    },
+    "_element_id": "my-letter-to-you"
+   },
+   "elements": [
+    {
+     "id": "c4a72c6",
+     "elType": "widget",
+     "settings": {
+      "title": "Available Now",
+      "header_size": "p",
+      "align": "center",
+      "title_color": "#B8893B",
+      "typography_typography": "custom",
+      "typography_font_family": "Lato",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 14,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 13,
+       "sizes": []
+      },
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": 3,
+       "sizes": []
+      },
+      "typography_text_transform": "uppercase",
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.4,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "heading"
+    },
+    {
+     "id": "ed9676e",
+     "elType": "widget",
+     "settings": {
+      "title": "My Letter to You",
+      "header_size": "h2",
+      "align": "center",
+      "title_color": "#1F2A44",
+      "typography_typography": "custom",
+      "typography_font_family": "Playfair Display",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 42,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 30,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.2,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "heading"
+    },
+    {
+     "id": "6dc655c",
+     "elType": "widget",
+     "settings": {
+      "title": "What Jesus' Seven Letters Reveal About Your Walk, Your Purpose, and Your Spiritual Authority",
+      "header_size": "p",
+      "align": "center",
+      "title_color": "#5A6070",
+      "typography_typography": "custom",
+      "typography_font_family": "Playfair Display",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 20,
+       "sizes": []
+      },
+      "typography_font_weight": "400",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 17,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.45,
+       "sizes": []
+      },
+      "typography_font_style": "italic"
+     },
+     "elements": [],
+     "widgetType": "heading"
+    },
+    {
+     "id": "8018f37",
+     "elType": "widget",
+     "settings": {
+      "color": "#B8893B",
+      "weight": {
+       "unit": "px",
+       "size": 2,
+       "sizes": []
+      },
+      "width": {
+       "unit": "px",
+       "size": 80,
+       "sizes": []
+      },
+      "align": "center",
+      "gap": {
+       "unit": "px",
+       "size": 6,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "divider"
+    },
+    {
+     "id": "9d6f1b8",
+     "elType": "widget",
+     "settings": {
+      "html": "<div class=\"rb-book\" data-title=\"My Letter to You\" data-cover=\"/wp-content/uploads/site-images/my-letter-to-you-cover.jpg\" data-cover-alt=\"My Letter to You by Richard Brokaw, book cover\">\n  <div class=\"rb-src\">\n    <section class=\"rb-page\" data-kind=\"title\"><h4>A Free Sample</h4><h3>My Letter to You</h3><hr><p class=\"sub\">What Jesus&#x27; Seven Letters Reveal About Your Walk, Your Purpose, and Your Spiritual Authority</p><p>Richard Brokaw</p></section>\n    <section class=\"rb-page\" data-kind=\"\"><h4>Chapter One</h4><h3>Chapter Title</h3><div class=\"rb-ph\">Sample text, page 1.<br>About 170 words fit on each page.</div></section>\n    <section class=\"rb-page\" data-kind=\"\"><div class=\"rb-ph\">Sample text, page 2.<br>About 170 words fit on each page.</div></section>\n    <section class=\"rb-page\" data-kind=\"\"><div class=\"rb-ph\">Sample text, page 3.<br>About 170 words fit on each page.</div></section>\n    <section class=\"rb-page\" data-kind=\"\"><div class=\"rb-ph\">Sample text, page 4.<br>About 170 words fit on each page.</div></section>\n    <section class=\"rb-page\" data-kind=\"end\"><h4>End of Sample</h4><h3>Keep Reading</h3><p>Enjoyed the sample? Continue reading the full book.</p><a href=\"https://www.amazon.com/s?k=9798765260692\" target=\"_blank\" rel=\"noopener\">Buy on Amazon</a></section>\n  </div>\n</div>"
+     },
+     "elements": [],
+     "widgetType": "html"
+    },
+    {
+     "id": "6b9599d",
+     "elType": "widget",
+     "settings": {
+      "title": "What is Jesus saying to His Ekklesia?",
+      "header_size": "p",
+      "align": "center",
+      "title_color": "#B8893B",
+      "typography_typography": "custom",
+      "typography_font_family": "Lato",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 14,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 13,
+       "sizes": []
+      },
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": 3,
+       "sizes": []
+      },
+      "typography_text_transform": "uppercase",
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.4,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "heading"
+    },
+    {
+     "id": "f83c9b7",
+     "elType": "widget",
+     "settings": {
+      "editor": "<p>The Seven Letters of Revelation are the words of Jesus Christ to His people.</p><p><em>My Letter to You</em> invites us to listen carefully to what Jesus said to the seven churches, and to consider what He is saying to His Ekklesia today.</p>",
+      "align": "center",
+      "text_color": "#2B2B2B",
+      "typography_typography": "custom",
+      "typography_font_family": "Lato",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 18,
+       "sizes": []
+      },
+      "typography_font_weight": "400",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 16,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.7,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "text-editor"
+    },
+    {
+     "id": "f18d01a",
+     "elType": "widget",
+     "settings": {
+      "text": "Buy on Amazon",
+      "link": {
+       "url": "https://www.amazon.com/s?k=9798765260692",
+       "is_external": "on",
+       "nofollow": "on",
+       "custom_attributes": ""
+      },
+      "align": "center",
+      "align_mobile": "center",
+      "background_color": "#B8893B",
+      "button_text_color": "#FFFFFF",
+      "button_background_hover_color": "#151D30",
+      "hover_color": "#FFFFFF",
+      "border_border": "solid",
+      "border_width": {
+       "unit": "px",
+       "top": "2",
+       "right": "2",
+       "bottom": "2",
+       "left": "2",
+       "isLinked": true
+      },
+      "border_color": "#B8893B",
+      "button_hover_border_color": "#151D30",
+      "border_radius": {
+       "unit": "px",
+       "top": "2",
+       "right": "2",
+       "bottom": "2",
+       "left": "2",
+       "isLinked": true
+      },
+      "text_padding": {
+       "unit": "px",
+       "top": "16",
+       "right": "32",
+       "bottom": "16",
+       "left": "32",
+       "isLinked": false
+      },
+      "typography_typography": "custom",
+      "typography_font_family": "Lato",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 14,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 13,
+       "sizes": []
+      },
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": 2,
+       "sizes": []
+      },
+      "typography_text_transform": "uppercase"
+     },
+     "elements": [],
+     "widgetType": "button"
+    },
+    {
+     "id": "d6b9bd7",
+     "elType": "widget",
+     "settings": {
+      "editor": "<p>Opens Amazon in a new tab</p>",
+      "align": "center",
+      "text_color": "#5A6070",
+      "typography_typography": "custom",
+      "typography_font_family": "Lato",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 14,
+       "sizes": []
+      },
+      "typography_font_weight": "400",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 16,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.7,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "text-editor"
+    },
+    {
+     "id": "f52101d",
+     "elType": "widget",
+     "settings": {
+      "editor": "<strong>Format</strong> Paperback · <strong>ISBN-13</strong> 979-8765260692",
+      "align": "center",
+      "text_color": "#5A6070",
+      "typography_typography": "custom",
+      "typography_font_family": "Lato",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 14,
+       "sizes": []
+      },
+      "typography_font_weight": "400",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 16,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.7,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "text-editor"
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "8b708f5",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "flex_align_items": "center",
+    "flex_justify_content": "flex-start",
+    "flex_gap": {
+     "unit": "px",
+     "size": 14,
+     "column": "14",
+     "row": "14",
+     "isLinked": true
+    },
+    "boxed_width": {
+     "unit": "px",
+     "size": 760,
+     "sizes": []
+    },
+    "background_background": "classic",
+    "background_color": "#FFFFFF",
+    "padding": {
+     "unit": "px",
+     "top": "80",
+     "right": "20",
+     "bottom": "90",
+     "left": "20",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "20",
+     "bottom": "48",
+     "left": "20",
+     "isLinked": false
+    },
+    "_element_id": "why-the-rapture-tarries"
+   },
+   "elements": [
+    {
+     "id": "e074ef2",
+     "elType": "widget",
+     "settings": {
+      "title": "New · Coming Soon",
+      "header_size": "p",
+      "align": "center",
+      "title_color": "#B8893B",
+      "typography_typography": "custom",
+      "typography_font_family": "Lato",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 14,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 13,
+       "sizes": []
+      },
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": 3,
+       "sizes": []
+      },
+      "typography_text_transform": "uppercase",
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.4,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "heading"
+    },
+    {
+     "id": "aff94d4",
+     "elType": "widget",
+     "settings": {
+      "title": "Why the Rapture Tarries",
+      "header_size": "h2",
+      "align": "center",
+      "title_color": "#1F2A44",
+      "typography_typography": "custom",
+      "typography_font_family": "Playfair Display",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 42,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 30,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.2,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "heading"
+    },
+    {
+     "id": "d2dd806",
+     "elType": "widget",
+     "settings": {
+      "title": "What If Jesus Isn't Waiting to Take His Church Out But Waiting to Finish What He Started?",
+      "header_size": "p",
+      "align": "center",
+      "title_color": "#5A6070",
+      "typography_typography": "custom",
+      "typography_font_family": "Playfair Display",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 20,
+       "sizes": []
+      },
+      "typography_font_weight": "400",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 17,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.45,
+       "sizes": []
+      },
+      "typography_font_style": "italic"
+     },
+     "elements": [],
+     "widgetType": "heading"
+    },
+    {
+     "id": "d0cfcdd",
+     "elType": "widget",
+     "settings": {
+      "color": "#B8893B",
+      "weight": {
+       "unit": "px",
+       "size": 2,
+       "sizes": []
+      },
+      "width": {
+       "unit": "px",
+       "size": 80,
+       "sizes": []
+      },
+      "align": "center",
+      "gap": {
+       "unit": "px",
+       "size": 6,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "divider"
+    },
+    {
+     "id": "0b7c183",
+     "elType": "widget",
+     "settings": {
+      "html": "<div class=\"rb-book\" data-title=\"Why the Rapture Tarries\" data-cover=\"/wp-content/uploads/site-images/why-the-rapture-tarries-cover.jpg\" data-cover-alt=\"Why the Rapture Tarries by Richard Brokaw, book cover\">\n  <div class=\"rb-src\">\n    <section class=\"rb-page\" data-kind=\"title\"><h4>A Free Sample</h4><h3>Why the Rapture Tarries</h3><hr><p class=\"sub\">What If Jesus Isn&#x27;t Waiting to Take His Church Out But Waiting to Finish What He Started?</p><p>Richard Brokaw</p></section>\n    <section class=\"rb-page\" data-kind=\"\"><h4>Chapter One</h4><h3>Chapter Title</h3><div class=\"rb-ph\">Sample text, page 1.<br>About 170 words fit on each page.</div></section>\n    <section class=\"rb-page\" data-kind=\"\"><div class=\"rb-ph\">Sample text, page 2.<br>About 170 words fit on each page.</div></section>\n    <section class=\"rb-page\" data-kind=\"\"><div class=\"rb-ph\">Sample text, page 3.<br>About 170 words fit on each page.</div></section>\n    <section class=\"rb-page\" data-kind=\"\"><div class=\"rb-ph\">Sample text, page 4.<br>About 170 words fit on each page.</div></section>\n    <section class=\"rb-page\" data-kind=\"end\"><h4>End of Sample</h4><h3>Keep Reading</h3><p>The full book is coming soon. Join the mailing list to hear the day it's available.</p><a href=\"/#join\">Get Notified</a></section>\n  </div>\n</div>"
+     },
+     "elements": [],
+     "widgetType": "html"
+    },
+    {
+     "id": "5df69d9",
+     "elType": "widget",
+     "settings": {
+      "title": "What is God doing while we wait?",
+      "header_size": "p",
+      "align": "center",
+      "title_color": "#B8893B",
+      "typography_typography": "custom",
+      "typography_font_family": "Lato",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 14,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 13,
+       "sizes": []
+      },
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": 3,
+       "sizes": []
+      },
+      "typography_text_transform": "uppercase",
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.4,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "heading"
+    },
+    {
+     "id": "dee999f",
+     "elType": "widget",
+     "settings": {
+      "editor": "<p>Christians have waited generations for Christ's return. But what if the question isn't simply <em>when</em> He will return? What if the waiting itself has a purpose?</p><p><em>Why the Rapture Tarries</em> explores what God is accomplishing in His Ekklesia while we wait for Christ's return.</p>",
+      "align": "center",
+      "text_color": "#2B2B2B",
+      "typography_typography": "custom",
+      "typography_font_family": "Lato",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 18,
+       "sizes": []
+      },
+      "typography_font_weight": "400",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 16,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.7,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "text-editor"
+    },
+    {
+     "id": "afd3da0",
+     "elType": "widget",
+     "settings": {
+      "title": "Coming Soon to Amazon",
+      "header_size": "p",
+      "align": "center",
+      "title_color": "#5A6070",
+      "typography_typography": "custom",
+      "typography_font_family": "Lato",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 14,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 30,
+       "sizes": []
+      },
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": 2,
+       "sizes": []
+      },
+      "typography_text_transform": "uppercase",
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.2,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "heading"
+    },
+    {
+     "id": "6aae7c7",
+     "elType": "widget",
+     "settings": {
+      "editor": "<p><a href=\"/#join\" style=\"color:#B8893B;font-weight:700\">Join the mailing list</a> to hear the day it's available.</p>",
+      "align": "center",
+      "text_color": "#5A6070",
+      "typography_typography": "custom",
+      "typography_font_family": "Lato",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 14,
+       "sizes": []
+      },
+      "typography_font_weight": "400",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 16,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.7,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "text-editor"
+    },
+    {
+     "id": "dc530ec",
+     "elType": "widget",
+     "settings": {
+      "editor": "<strong>Status</strong> Coming soon",
+      "align": "center",
+      "text_color": "#5A6070",
+      "typography_typography": "custom",
+      "typography_font_family": "Lato",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 14,
+       "sizes": []
+      },
+      "typography_font_weight": "400",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 16,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.7,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "text-editor"
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "1a768fd",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "flex_align_items": "center",
+    "flex_justify_content": "flex-start",
+    "flex_gap": {
+     "unit": "px",
+     "size": 14,
+     "column": "14",
+     "row": "14",
+     "isLinked": true
+    },
+    "boxed_width": {
+     "unit": "px",
+     "size": 1140,
+     "sizes": []
+    },
+    "background_background": "classic",
+    "background_color": "#F7F3EC",
+    "padding": {
+     "unit": "px",
+     "top": "80",
+     "right": "20",
+     "bottom": "90",
+     "left": "20",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "20",
+     "bottom": "48",
+     "left": "20",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "043b4ec",
+     "elType": "widget",
+     "settings": {
+      "title": "Go Deeper",
+      "header_size": "p",
+      "align": "center",
+      "title_color": "#B8893B",
+      "typography_typography": "custom",
+      "typography_font_family": "Lato",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 14,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 13,
+       "sizes": []
+      },
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": 3,
+       "sizes": []
+      },
+      "typography_text_transform": "uppercase",
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.4,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "heading"
+    },
+    {
+     "id": "3c307bd",
+     "elType": "widget",
+     "settings": {
+      "title": "Free Studies While You Read",
+      "header_size": "h2",
+      "align": "center",
+      "title_color": "#1F2A44",
+      "typography_typography": "custom",
+      "typography_font_family": "Playfair Display",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 34,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 26,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.2,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "heading"
+    },
+    {
+     "id": "4f40774",
+     "elType": "widget",
+     "settings": {
+      "editor": "<p>Six free studies on knowing God, maturity in Christ, and discipleship.</p>",
+      "align": "center",
+      "text_color": "#5A6070",
+      "typography_typography": "custom",
+      "typography_font_family": "Lato",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 18,
+       "sizes": []
+      },
+      "typography_font_weight": "400",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 16,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.7,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "text-editor"
+    },
+    {
+     "id": "6ff09f5",
+     "elType": "widget",
+     "settings": {
+      "text": "Free Resources",
+      "link": {
+       "url": "/free_resources/",
+       "is_external": "",
+       "nofollow": "",
+       "custom_attributes": ""
+      },
+      "align": "center",
+      "align_mobile": "center",
+      "background_color": "#B8893B",
+      "button_text_color": "#FFFFFF",
+      "button_background_hover_color": "#151D30",
+      "hover_color": "#FFFFFF",
+      "border_border": "solid",
+      "border_width": {
+       "unit": "px",
+       "top": "2",
+       "right": "2",
+       "bottom": "2",
+       "left": "2",
+       "isLinked": true
+      },
+      "border_color": "#B8893B",
+      "button_hover_border_color": "#151D30",
+      "border_radius": {
+       "unit": "px",
+       "top": "2",
+       "right": "2",
+       "bottom": "2",
+       "left": "2",
+       "isLinked": true
+      },
+      "text_padding": {
+       "unit": "px",
+       "top": "16",
+       "right": "32",
+       "bottom": "16",
+       "left": "32",
+       "isLinked": false
+      },
+      "typography_typography": "custom",
+      "typography_font_family": "Lato",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 14,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 13,
+       "sizes": []
+      },
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": 2,
+       "sizes": []
+      },
+      "typography_text_transform": "uppercase"
+     },
+     "elements": [],
+     "widgetType": "button"
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": {
+  "hide_title": "yes",
+  "template": "elementor_header_footer"
+ },
+ "version": "0.4",
+ "title": "Richard Brokaw – Books",
+ "type": "page"
+}

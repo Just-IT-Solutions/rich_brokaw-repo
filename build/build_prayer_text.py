@@ -1,0 +1,14 @@
+"""Prayer text, verbatim from Prayer_for_the_babies_in_NYS.docx (Richard Brokaw)."""
+SALUTATION = "Father,"
+PARAS = [
+ "We are grieved over the killing of our babies and are coming to You as the Judge of the Universe. Your Word states that Your wrath is revealed against all ungodliness and unrighteousness of men who suppress the truth in unrighteousness. Listen to the threats of those who would silence our voices and prevent our efforts to save the babies from sacrifice to Baal. We come into agreement with Your heart, and by the authority of Jesus Christ, we come against those who would seek harm against the babies. We bind the principalities and powers and neuter their influence over those who are involved in supporting the sacrifice of babies. From any and every government office in New York to every place abortion is done in NY, from the politicians to the healthcare workers who perform abortions, we bind the principalities and powers from influencing them. They have been dethroned, and now we call them to silence!",
+ "We pray for those who are involved in promoting abortion in NYS. We ask the Lord to extend mercy to them and allow them to repent of this great evil. We turn them over to Your justice if they resist repentance and rebel against Your truth. Lord, deal with them in Your righteousness, and may the fear of the Lord fall on all.",
+ "We pray for those among the citizenry of NYS who have been deceived and have followed their false arguments that it is the right of every woman to choose abortion without the truth of the consequences of such a horrible decision. Lord, have mercy on them! We call now for these strongholds to be destroyed by the power of Jesus Christ. We ask that the Holy Spirit replace the lies of abortion with the truth of life in the womb in the mindsets of young people, from grandparents to young people, from teachers in schools to professors in higher education, from clerks in government offices to the governor of NYS. Have mercy on all of them, and for those who refuse Your mercy, let Your justice and righteousness stand. Remove those in any position of influence who refuse Your mercy and replace them with those who fear Your Holy Name.",
+ "We ask now, Father, for grace on us for boldness in speaking. Let our words be seasoned with grace, and our hearts filled with Your love, and the power of the Holy Spirit move us to stand with You in this hour. Be glorified through us! To You be glory in the Ecclesia, Christ Jesus, and all generations, forever and ever! Amen!",
+]
+# Short guide labels for praying section by section (added for the page, not part of the prayer)
+LABELS = ["For the babies, and against the powers behind their harm",
+          "For those who promote abortion",
+          "For those who have been deceived",
+          "For our boldness"]
+TITLE = "A Prayer for the Babies in New York State"

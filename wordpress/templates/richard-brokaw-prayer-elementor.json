@@ -1,0 +1,2076 @@
+{
+ "content": [
+  {
+   "id": "dfbef2a",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "flex_align_items": "center",
+    "flex_justify_content": "flex-start",
+    "flex_gap": {
+     "unit": "px",
+     "size": 16,
+     "column": "16",
+     "row": "16",
+     "isLinked": true
+    },
+    "boxed_width": {
+     "unit": "px",
+     "size": 900,
+     "sizes": []
+    },
+    "background_background": "classic",
+    "background_color": "#151D30",
+    "padding": {
+     "unit": "px",
+     "top": "90",
+     "right": "20",
+     "bottom": "80",
+     "left": "20",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "20",
+     "bottom": "48",
+     "left": "20",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "dbee62c",
+     "elType": "widget",
+     "settings": {
+      "title": "Free Resource · A Prayer",
+      "header_size": "p",
+      "align": "center",
+      "title_color": "#B8893B",
+      "typography_typography": "custom",
+      "typography_font_family": "Lato",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 14,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 13,
+       "sizes": []
+      },
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": 3,
+       "sizes": []
+      },
+      "typography_text_transform": "uppercase",
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.4,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "heading"
+    },
+    {
+     "id": "bf9abbf",
+     "elType": "widget",
+     "settings": {
+      "title": "A Prayer for the Babies in New York State",
+      "header_size": "h1",
+      "align": "center",
+      "title_color": "#FFFFFF",
+      "typography_typography": "custom",
+      "typography_font_family": "Playfair Display",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 50,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 32,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.2,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "heading"
+    },
+    {
+     "id": "b095024",
+     "elType": "widget",
+     "settings": {
+      "color": "#B8893B",
+      "weight": {
+       "unit": "px",
+       "size": 2,
+       "sizes": []
+      },
+      "width": {
+       "unit": "px",
+       "size": 80,
+       "sizes": []
+      },
+      "align": "center",
+      "gap": {
+       "unit": "px",
+       "size": 6,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "divider"
+    },
+    {
+     "id": "510dc57",
+     "elType": "widget",
+     "settings": {
+      "editor": "<p>A prayer written by Richard Brokaw for believers to pray, alone or together, for the babies and for the people of New York State.</p>",
+      "align": "center",
+      "text_color": "#D9DCE3",
+      "typography_typography": "custom",
+      "typography_font_family": "Lato",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 19,
+       "sizes": []
+      },
+      "typography_font_weight": "400",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 16,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.7,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "text-editor"
+    },
+    {
+     "id": "bd68202",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "flex_align_items": "center",
+      "flex_justify_content": "center",
+      "flex_gap": {
+       "unit": "px",
+       "size": 14,
+       "column": "14",
+       "row": "14",
+       "isLinked": true
+      },
+      "flex_direction_mobile": "column",
+      "flex_wrap": "wrap"
+     },
+     "elements": [
+      {
+       "id": "f6a3064",
+       "elType": "widget",
+       "settings": {
+        "text": "Pray the Prayer",
+        "link": {
+         "url": "#prayer",
+         "is_external": "",
+         "nofollow": "",
+         "custom_attributes": ""
+        },
+        "align": "center",
+        "align_mobile": "center",
+        "background_color": "#B8893B",
+        "button_text_color": "#FFFFFF",
+        "button_background_hover_color": "#151D30",
+        "hover_color": "#FFFFFF",
+        "border_border": "solid",
+        "border_width": {
+         "unit": "px",
+         "top": "2",
+         "right": "2",
+         "bottom": "2",
+         "left": "2",
+         "isLinked": true
+        },
+        "border_color": "#B8893B",
+        "button_hover_border_color": "#151D30",
+        "border_radius": {
+         "unit": "px",
+         "top": "2",
+         "right": "2",
+         "bottom": "2",
+         "left": "2",
+         "isLinked": true
+        },
+        "text_padding": {
+         "unit": "px",
+         "top": "16",
+         "right": "32",
+         "bottom": "16",
+         "left": "32",
+         "isLinked": false
+        },
+        "typography_typography": "custom",
+        "typography_font_family": "Lato",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 14,
+         "sizes": []
+        },
+        "typography_font_weight": "700",
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 13,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 2,
+         "sizes": []
+        },
+        "typography_text_transform": "uppercase"
+       },
+       "elements": [],
+       "widgetType": "button"
+      },
+      {
+       "id": "e45bd94",
+       "elType": "widget",
+       "settings": {
+        "text": "Download Printable PDF",
+        "link": {
+         "url": "/wp-content/uploads/resources/prayer-for-the-babies-in-nys.pdf",
+         "is_external": "on",
+         "nofollow": "",
+         "custom_attributes": ""
+        },
+        "align": "center",
+        "align_mobile": "center",
+        "background_color": "rgba(0,0,0,0)",
+        "button_text_color": "#FFFFFF",
+        "button_background_hover_color": "#FFFFFF",
+        "hover_color": "#1F2A44",
+        "border_border": "solid",
+        "border_width": {
+         "unit": "px",
+         "top": "2",
+         "right": "2",
+         "bottom": "2",
+         "left": "2",
+         "isLinked": true
+        },
+        "border_color": "#FFFFFF",
+        "button_hover_border_color": "#FFFFFF",
+        "border_radius": {
+         "unit": "px",
+         "top": "2",
+         "right": "2",
+         "bottom": "2",
+         "left": "2",
+         "isLinked": true
+        },
+        "text_padding": {
+         "unit": "px",
+         "top": "16",
+         "right": "32",
+         "bottom": "16",
+         "left": "32",
+         "isLinked": false
+        },
+        "typography_typography": "custom",
+        "typography_font_family": "Lato",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 14,
+         "sizes": []
+        },
+        "typography_font_weight": "700",
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 13,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 2,
+         "sizes": []
+        },
+        "typography_text_transform": "uppercase"
+       },
+       "elements": [],
+       "widgetType": "button"
+      }
+     ],
+     "isInner": true
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "646f2f3",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "flex_align_items": "stretch",
+    "flex_justify_content": "flex-start",
+    "flex_gap": {
+     "unit": "px",
+     "size": 24,
+     "column": "24",
+     "row": "24",
+     "isLinked": true
+    },
+    "boxed_width": {
+     "unit": "px",
+     "size": 980,
+     "sizes": []
+    },
+    "background_background": "classic",
+    "background_color": "#F7F3EC",
+    "padding": {
+     "unit": "px",
+     "top": "80",
+     "right": "20",
+     "bottom": "90",
+     "left": "20",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "20",
+     "bottom": "48",
+     "left": "20",
+     "isLinked": false
+    },
+    "_element_id": "prayer"
+   },
+   "elements": [
+    {
+     "id": "b2b3537",
+     "elType": "widget",
+     "settings": {
+      "editor": "<p style=\"font-style:italic;font-size:24px;color:#1F2A44;font-family:Playfair Display,Georgia,serif\">Father,</p>",
+      "align": "left",
+      "text_color": "#2B2B2B",
+      "typography_typography": "custom",
+      "typography_font_family": "Lato",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 18,
+       "sizes": []
+      },
+      "typography_font_weight": "400",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 16,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.7,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "text-editor"
+    },
+    {
+     "id": "e485568",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "flex_align_items": "flex-start",
+      "flex_justify_content": "flex-start",
+      "flex_gap": {
+       "unit": "px",
+       "size": 36,
+       "column": "36",
+       "row": "36",
+       "isLinked": true
+      },
+      "flex_direction_mobile": "column",
+      "flex_wrap": "wrap"
+     },
+     "elements": [
+      {
+       "id": "801b9bf",
+       "elType": "container",
+       "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_align_items": "flex-start",
+        "flex_justify_content": "flex-start",
+        "flex_gap": {
+         "unit": "px",
+         "size": 20,
+         "column": "20",
+         "row": "20",
+         "isLinked": true
+        },
+        "width": {
+         "unit": "%",
+         "size": 24,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "border_border": "solid",
+        "border_width": {
+         "unit": "px",
+         "top": "2",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        },
+        "border_color": "#B8893B",
+        "padding": {
+         "unit": "px",
+         "top": "6",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [
+        {
+         "id": "4c7dfa3",
+         "elType": "widget",
+         "settings": {
+          "title": "For the babies, and against the powers behind their harm",
+          "header_size": "p",
+          "align": "left",
+          "title_color": "#B8893B",
+          "typography_typography": "custom",
+          "typography_font_family": "Lato",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 14,
+           "sizes": []
+          },
+          "typography_font_weight": "700",
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 13,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 3,
+           "sizes": []
+          },
+          "typography_text_transform": "uppercase",
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1.4,
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "widgetType": "heading"
+        }
+       ],
+       "isInner": true
+      },
+      {
+       "id": "1d544af",
+       "elType": "container",
+       "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_align_items": "flex-start",
+        "flex_justify_content": "flex-start",
+        "flex_gap": {
+         "unit": "px",
+         "size": 20,
+         "column": "20",
+         "row": "20",
+         "isLinked": true
+        },
+        "width": {
+         "unit": "%",
+         "size": 72,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "_css": ""
+       },
+       "elements": [
+        {
+         "id": "d7901a2",
+         "elType": "widget",
+         "settings": {
+          "editor": "<p>We are grieved over the killing of our babies and are coming to You as the Judge of the Universe. Your Word states that Your wrath is revealed against all ungodliness and unrighteousness of men who suppress the truth in unrighteousness. Listen to the threats of those who would silence our voices and prevent our efforts to save the babies from sacrifice to Baal. We come into agreement with Your heart, and by the authority of Jesus Christ, we come against those who would seek harm against the babies. We bind the principalities and powers and neuter their influence over those who are involved in supporting the sacrifice of babies. From any and every government office in New York to every place abortion is done in NY, from the politicians to the healthcare workers who perform abortions, we bind the principalities and powers from influencing them. They have been dethroned, and now we call them to silence!</p>",
+          "align": "left",
+          "text_color": "#2B2B2B",
+          "typography_typography": "custom",
+          "typography_font_family": "Playfair Display",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_font_weight": "400",
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 16,
+           "sizes": []
+          },
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1.85,
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "widgetType": "text-editor"
+        }
+       ],
+       "isInner": true
+      }
+     ],
+     "isInner": true
+    },
+    {
+     "id": "b9aa465",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "flex_align_items": "flex-start",
+      "flex_justify_content": "flex-start",
+      "flex_gap": {
+       "unit": "px",
+       "size": 36,
+       "column": "36",
+       "row": "36",
+       "isLinked": true
+      },
+      "flex_direction_mobile": "column",
+      "flex_wrap": "wrap"
+     },
+     "elements": [
+      {
+       "id": "681249c",
+       "elType": "container",
+       "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_align_items": "flex-start",
+        "flex_justify_content": "flex-start",
+        "flex_gap": {
+         "unit": "px",
+         "size": 20,
+         "column": "20",
+         "row": "20",
+         "isLinked": true
+        },
+        "width": {
+         "unit": "%",
+         "size": 24,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "border_border": "solid",
+        "border_width": {
+         "unit": "px",
+         "top": "2",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        },
+        "border_color": "#B8893B",
+        "padding": {
+         "unit": "px",
+         "top": "6",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [
+        {
+         "id": "be98979",
+         "elType": "widget",
+         "settings": {
+          "title": "For those who promote abortion",
+          "header_size": "p",
+          "align": "left",
+          "title_color": "#B8893B",
+          "typography_typography": "custom",
+          "typography_font_family": "Lato",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 14,
+           "sizes": []
+          },
+          "typography_font_weight": "700",
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 13,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 3,
+           "sizes": []
+          },
+          "typography_text_transform": "uppercase",
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1.4,
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "widgetType": "heading"
+        }
+       ],
+       "isInner": true
+      },
+      {
+       "id": "afbbe0f",
+       "elType": "container",
+       "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_align_items": "flex-start",
+        "flex_justify_content": "flex-start",
+        "flex_gap": {
+         "unit": "px",
+         "size": 20,
+         "column": "20",
+         "row": "20",
+         "isLinked": true
+        },
+        "width": {
+         "unit": "%",
+         "size": 72,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "_css": ""
+       },
+       "elements": [
+        {
+         "id": "36dddb4",
+         "elType": "widget",
+         "settings": {
+          "editor": "<p>We pray for those who are involved in promoting abortion in NYS. We ask the Lord to extend mercy to them and allow them to repent of this great evil. We turn them over to Your justice if they resist repentance and rebel against Your truth. Lord, deal with them in Your righteousness, and may the fear of the Lord fall on all.</p>",
+          "align": "left",
+          "text_color": "#2B2B2B",
+          "typography_typography": "custom",
+          "typography_font_family": "Playfair Display",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_font_weight": "400",
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 16,
+           "sizes": []
+          },
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1.85,
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "widgetType": "text-editor"
+        }
+       ],
+       "isInner": true
+      }
+     ],
+     "isInner": true
+    },
+    {
+     "id": "bd576c3",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "flex_align_items": "flex-start",
+      "flex_justify_content": "flex-start",
+      "flex_gap": {
+       "unit": "px",
+       "size": 36,
+       "column": "36",
+       "row": "36",
+       "isLinked": true
+      },
+      "flex_direction_mobile": "column",
+      "flex_wrap": "wrap"
+     },
+     "elements": [
+      {
+       "id": "40b19e4",
+       "elType": "container",
+       "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_align_items": "flex-start",
+        "flex_justify_content": "flex-start",
+        "flex_gap": {
+         "unit": "px",
+         "size": 20,
+         "column": "20",
+         "row": "20",
+         "isLinked": true
+        },
+        "width": {
+         "unit": "%",
+         "size": 24,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "border_border": "solid",
+        "border_width": {
+         "unit": "px",
+         "top": "2",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        },
+        "border_color": "#B8893B",
+        "padding": {
+         "unit": "px",
+         "top": "6",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [
+        {
+         "id": "3b29aa9",
+         "elType": "widget",
+         "settings": {
+          "title": "For those who have been deceived",
+          "header_size": "p",
+          "align": "left",
+          "title_color": "#B8893B",
+          "typography_typography": "custom",
+          "typography_font_family": "Lato",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 14,
+           "sizes": []
+          },
+          "typography_font_weight": "700",
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 13,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 3,
+           "sizes": []
+          },
+          "typography_text_transform": "uppercase",
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1.4,
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "widgetType": "heading"
+        }
+       ],
+       "isInner": true
+      },
+      {
+       "id": "72085d5",
+       "elType": "container",
+       "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_align_items": "flex-start",
+        "flex_justify_content": "flex-start",
+        "flex_gap": {
+         "unit": "px",
+         "size": 20,
+         "column": "20",
+         "row": "20",
+         "isLinked": true
+        },
+        "width": {
+         "unit": "%",
+         "size": 72,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "_css": ""
+       },
+       "elements": [
+        {
+         "id": "96597a4",
+         "elType": "widget",
+         "settings": {
+          "editor": "<p>We pray for those among the citizenry of NYS who have been deceived and have followed their false arguments that it is the right of every woman to choose abortion without the truth of the consequences of such a horrible decision. Lord, have mercy on them! We call now for these strongholds to be destroyed by the power of Jesus Christ. We ask that the Holy Spirit replace the lies of abortion with the truth of life in the womb in the mindsets of young people, from grandparents to young people, from teachers in schools to professors in higher education, from clerks in government offices to the governor of NYS. Have mercy on all of them, and for those who refuse Your mercy, let Your justice and righteousness stand. Remove those in any position of influence who refuse Your mercy and replace them with those who fear Your Holy Name.</p>",
+          "align": "left",
+          "text_color": "#2B2B2B",
+          "typography_typography": "custom",
+          "typography_font_family": "Playfair Display",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_font_weight": "400",
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 16,
+           "sizes": []
+          },
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1.85,
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "widgetType": "text-editor"
+        }
+       ],
+       "isInner": true
+      }
+     ],
+     "isInner": true
+    },
+    {
+     "id": "8b348d1",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "flex_align_items": "flex-start",
+      "flex_justify_content": "flex-start",
+      "flex_gap": {
+       "unit": "px",
+       "size": 36,
+       "column": "36",
+       "row": "36",
+       "isLinked": true
+      },
+      "flex_direction_mobile": "column",
+      "flex_wrap": "wrap"
+     },
+     "elements": [
+      {
+       "id": "d22c190",
+       "elType": "container",
+       "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_align_items": "flex-start",
+        "flex_justify_content": "flex-start",
+        "flex_gap": {
+         "unit": "px",
+         "size": 20,
+         "column": "20",
+         "row": "20",
+         "isLinked": true
+        },
+        "width": {
+         "unit": "%",
+         "size": 24,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "border_border": "solid",
+        "border_width": {
+         "unit": "px",
+         "top": "2",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        },
+        "border_color": "#B8893B",
+        "padding": {
+         "unit": "px",
+         "top": "6",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [
+        {
+         "id": "4c11e73",
+         "elType": "widget",
+         "settings": {
+          "title": "For our boldness",
+          "header_size": "p",
+          "align": "left",
+          "title_color": "#B8893B",
+          "typography_typography": "custom",
+          "typography_font_family": "Lato",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 14,
+           "sizes": []
+          },
+          "typography_font_weight": "700",
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 13,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 3,
+           "sizes": []
+          },
+          "typography_text_transform": "uppercase",
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1.4,
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "widgetType": "heading"
+        }
+       ],
+       "isInner": true
+      },
+      {
+       "id": "d58b63c",
+       "elType": "container",
+       "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_align_items": "flex-start",
+        "flex_justify_content": "flex-start",
+        "flex_gap": {
+         "unit": "px",
+         "size": 20,
+         "column": "20",
+         "row": "20",
+         "isLinked": true
+        },
+        "width": {
+         "unit": "%",
+         "size": 72,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "_css": ""
+       },
+       "elements": [
+        {
+         "id": "1690ce5",
+         "elType": "widget",
+         "settings": {
+          "editor": "<p>We ask now, Father, for grace on us for boldness in speaking. Let our words be seasoned with grace, and our hearts filled with Your love, and the power of the Holy Spirit move us to stand with You in this hour. Be glorified through us! To You be glory in the Ecclesia, Christ Jesus, and all generations, forever and ever! Amen!</p>",
+          "align": "left",
+          "text_color": "#2B2B2B",
+          "typography_typography": "custom",
+          "typography_font_family": "Playfair Display",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_font_weight": "400",
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 16,
+           "sizes": []
+          },
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1.85,
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "widgetType": "text-editor"
+        }
+       ],
+       "isInner": true
+      }
+     ],
+     "isInner": true
+    },
+    {
+     "id": "8abef22",
+     "elType": "widget",
+     "settings": {
+      "space": {
+       "unit": "px",
+       "size": 10,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "spacer"
+    },
+    {
+     "id": "69d5617",
+     "elType": "widget",
+     "settings": {
+      "color": "#B8893B",
+      "weight": {
+       "unit": "px",
+       "size": 2,
+       "sizes": []
+      },
+      "width": {
+       "unit": "px",
+       "size": 80,
+       "sizes": []
+      },
+      "align": "center",
+      "gap": {
+       "unit": "px",
+       "size": 6,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "divider"
+    },
+    {
+     "id": "b92b4e4",
+     "elType": "widget",
+     "settings": {
+      "title": "Richard Brokaw",
+      "header_size": "p",
+      "align": "center",
+      "title_color": "#B8893B",
+      "typography_typography": "custom",
+      "typography_font_family": "Lato",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 14,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 13,
+       "sizes": []
+      },
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": 3,
+       "sizes": []
+      },
+      "typography_text_transform": "uppercase",
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.4,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "heading"
+    },
+    {
+     "id": "72f75d8",
+     "elType": "widget",
+     "settings": {
+      "text": "Download Printable PDF",
+      "link": {
+       "url": "/wp-content/uploads/resources/prayer-for-the-babies-in-nys.pdf",
+       "is_external": "on",
+       "nofollow": "",
+       "custom_attributes": ""
+      },
+      "align": "center",
+      "align_mobile": "center",
+      "background_color": "rgba(0,0,0,0)",
+      "button_text_color": "#1F2A44",
+      "button_background_hover_color": "#1F2A44",
+      "hover_color": "#FFFFFF",
+      "border_border": "solid",
+      "border_width": {
+       "unit": "px",
+       "top": "2",
+       "right": "2",
+       "bottom": "2",
+       "left": "2",
+       "isLinked": true
+      },
+      "border_color": "#1F2A44",
+      "button_hover_border_color": "#1F2A44",
+      "border_radius": {
+       "unit": "px",
+       "top": "2",
+       "right": "2",
+       "bottom": "2",
+       "left": "2",
+       "isLinked": true
+      },
+      "text_padding": {
+       "unit": "px",
+       "top": "16",
+       "right": "32",
+       "bottom": "16",
+       "left": "32",
+       "isLinked": false
+      },
+      "typography_typography": "custom",
+      "typography_font_family": "Lato",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 14,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 13,
+       "sizes": []
+      },
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": 2,
+       "sizes": []
+      },
+      "typography_text_transform": "uppercase"
+     },
+     "elements": [],
+     "widgetType": "button"
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "6d6722c",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "flex_align_items": "center",
+    "flex_justify_content": "flex-start",
+    "flex_gap": {
+     "unit": "px",
+     "size": 16,
+     "column": "16",
+     "row": "16",
+     "isLinked": true
+    },
+    "boxed_width": {
+     "unit": "px",
+     "size": 1140,
+     "sizes": []
+    },
+    "background_background": "classic",
+    "background_color": "#FFFFFF",
+    "padding": {
+     "unit": "px",
+     "top": "90",
+     "right": "20",
+     "bottom": "90",
+     "left": "20",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "20",
+     "bottom": "48",
+     "left": "20",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "656540c",
+     "elType": "widget",
+     "settings": {
+      "title": "Pray It With Others",
+      "header_size": "p",
+      "align": "center",
+      "title_color": "#B8893B",
+      "typography_typography": "custom",
+      "typography_font_family": "Lato",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 14,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 13,
+       "sizes": []
+      },
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": 3,
+       "sizes": []
+      },
+      "typography_text_transform": "uppercase",
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.4,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "heading"
+    },
+    {
+     "id": "05d074a",
+     "elType": "widget",
+     "settings": {
+      "title": "Carry This Prayer Further",
+      "header_size": "h2",
+      "align": "center",
+      "title_color": "#1F2A44",
+      "typography_typography": "custom",
+      "typography_font_family": "Playfair Display",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 38,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 28,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.2,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "heading"
+    },
+    {
+     "id": "e37c7e0",
+     "elType": "widget",
+     "settings": {
+      "color": "#B8893B",
+      "weight": {
+       "unit": "px",
+       "size": 2,
+       "sizes": []
+      },
+      "width": {
+       "unit": "px",
+       "size": 80,
+       "sizes": []
+      },
+      "align": "center",
+      "gap": {
+       "unit": "px",
+       "size": 6,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "divider"
+    },
+    {
+     "id": "d302b9e",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "flex_align_items": "flex-start",
+      "flex_justify_content": "flex-start",
+      "flex_gap": {
+       "unit": "px",
+       "size": 30,
+       "column": "30",
+       "row": "30",
+       "isLinked": true
+      },
+      "flex_direction_mobile": "column",
+      "flex_wrap": "wrap"
+     },
+     "elements": [
+      {
+       "id": "c5c97d0",
+       "elType": "container",
+       "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_align_items": "flex-start",
+        "flex_justify_content": "flex-start",
+        "flex_gap": {
+         "unit": "px",
+         "size": 8,
+         "column": "8",
+         "row": "8",
+         "isLinked": true
+        },
+        "width": {
+         "unit": "%",
+         "size": 31,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "border_border": "solid",
+        "border_width": {
+         "unit": "px",
+         "top": "2",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        },
+        "border_color": "#B8893B",
+        "padding": {
+         "unit": "px",
+         "top": "16",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [
+        {
+         "id": "ac4dadf",
+         "elType": "widget",
+         "settings": {
+          "title": "Pray it daily",
+          "header_size": "h3",
+          "align": "left",
+          "title_color": "#1F2A44",
+          "typography_typography": "custom",
+          "typography_font_family": "Playfair Display",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 21,
+           "sizes": []
+          },
+          "typography_font_weight": "700",
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1.2,
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "widgetType": "heading"
+        },
+        {
+         "id": "6710d35",
+         "elType": "widget",
+         "settings": {
+          "editor": "<p>Read it aloud each morning, or set a time each week to pray it with your family.</p>",
+          "align": "left",
+          "text_color": "#2B2B2B",
+          "typography_typography": "custom",
+          "typography_font_family": "Lato",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 16,
+           "sizes": []
+          },
+          "typography_font_weight": "400",
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 16,
+           "sizes": []
+          },
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1.6,
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "widgetType": "text-editor"
+        }
+       ],
+       "isInner": true
+      },
+      {
+       "id": "86ea584",
+       "elType": "container",
+       "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_align_items": "flex-start",
+        "flex_justify_content": "flex-start",
+        "flex_gap": {
+         "unit": "px",
+         "size": 8,
+         "column": "8",
+         "row": "8",
+         "isLinked": true
+        },
+        "width": {
+         "unit": "%",
+         "size": 31,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "border_border": "solid",
+        "border_width": {
+         "unit": "px",
+         "top": "2",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        },
+        "border_color": "#B8893B",
+        "padding": {
+         "unit": "px",
+         "top": "16",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [
+        {
+         "id": "a3d304c",
+         "elType": "widget",
+         "settings": {
+          "title": "Pray it together",
+          "header_size": "h3",
+          "align": "left",
+          "title_color": "#1F2A44",
+          "typography_typography": "custom",
+          "typography_font_family": "Playfair Display",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 21,
+           "sizes": []
+          },
+          "typography_font_weight": "700",
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1.2,
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "widgetType": "heading"
+        },
+        {
+         "id": "0fad03e",
+         "elType": "widget",
+         "settings": {
+          "editor": "<p>Print the one-page PDF for your church, prayer meeting, men's group, or small group.</p>",
+          "align": "left",
+          "text_color": "#2B2B2B",
+          "typography_typography": "custom",
+          "typography_font_family": "Lato",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 16,
+           "sizes": []
+          },
+          "typography_font_weight": "400",
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 16,
+           "sizes": []
+          },
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1.6,
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "widgetType": "text-editor"
+        }
+       ],
+       "isInner": true
+      },
+      {
+       "id": "dda4f93",
+       "elType": "container",
+       "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_align_items": "flex-start",
+        "flex_justify_content": "flex-start",
+        "flex_gap": {
+         "unit": "px",
+         "size": 8,
+         "column": "8",
+         "row": "8",
+         "isLinked": true
+        },
+        "width": {
+         "unit": "%",
+         "size": 31,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "border_border": "solid",
+        "border_width": {
+         "unit": "px",
+         "top": "2",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        },
+        "border_color": "#B8893B",
+        "padding": {
+         "unit": "px",
+         "top": "16",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [
+        {
+         "id": "1a94abc",
+         "elType": "widget",
+         "settings": {
+          "title": "Share it",
+          "header_size": "h3",
+          "align": "left",
+          "title_color": "#1F2A44",
+          "typography_typography": "custom",
+          "typography_font_family": "Playfair Display",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 21,
+           "sizes": []
+          },
+          "typography_font_weight": "700",
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1.2,
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "widgetType": "heading"
+        },
+        {
+         "id": "73f868a",
+         "elType": "widget",
+         "settings": {
+          "editor": "<p>Send this page to other believers so more voices come into agreement.</p>",
+          "align": "left",
+          "text_color": "#2B2B2B",
+          "typography_typography": "custom",
+          "typography_font_family": "Lato",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 16,
+           "sizes": []
+          },
+          "typography_font_weight": "400",
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 16,
+           "sizes": []
+          },
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1.6,
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "widgetType": "text-editor"
+        },
+        {
+         "id": "1b2194a",
+         "elType": "widget",
+         "settings": {
+          "html": "<div style=\"display:flex;gap:10px;flex-wrap:wrap\"><input id=\"pr-share\" readonly style=\"flex:1 1 200px;min-width:0;padding:11px 12px;border:1px solid #E3DCCD;font:14px Lato,sans-serif\"><button type=\"button\" id=\"pr-copy\" style=\"cursor:pointer;background:#B8893B;color:#fff;border:2px solid #B8893B;padding:11px 18px;font:700 12px Lato,sans-serif;letter-spacing:2px;text-transform:uppercase\">Copy Link</button></div><p id=\"pr-note\" style=\"font:13px Lato,sans-serif;color:#5A6070;min-height:1.4em\"></p>\n<script>(function(){var u=document.getElementById('pr-share'),b=document.getElementById('pr-copy'),n=document.getElementById('pr-note');u.value=location.href.split('#')[0];b.onclick=function(){function f(){u.focus();u.select();n.textContent='Link selected. Press Ctrl+C (or Cmd+C) to copy.';}try{navigator.clipboard.writeText(u.value).then(function(){n.textContent='Link copied.';},f);}catch(e){f();}};})();</script>"
+         },
+         "elements": [],
+         "widgetType": "html"
+        }
+       ],
+       "isInner": true
+      }
+     ],
+     "isInner": true
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "14cc048",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "flex_align_items": "center",
+    "flex_justify_content": "flex-start",
+    "flex_gap": {
+     "unit": "px",
+     "size": 14,
+     "column": "14",
+     "row": "14",
+     "isLinked": true
+    },
+    "boxed_width": {
+     "unit": "px",
+     "size": 760,
+     "sizes": []
+    },
+    "background_background": "classic",
+    "background_color": "#1F2A44",
+    "padding": {
+     "unit": "px",
+     "top": "80",
+     "right": "20",
+     "bottom": "80",
+     "left": "20",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "20",
+     "bottom": "48",
+     "left": "20",
+     "isLinked": false
+    },
+    "_element_id": "join"
+   },
+   "elements": [
+    {
+     "id": "98c6fac",
+     "elType": "widget",
+     "settings": {
+      "title": "Stand With Us in Prayer",
+      "header_size": "p",
+      "align": "center",
+      "title_color": "#B8893B",
+      "typography_typography": "custom",
+      "typography_font_family": "Lato",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 14,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 13,
+       "sizes": []
+      },
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": 3,
+       "sizes": []
+      },
+      "typography_text_transform": "uppercase",
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.4,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "heading"
+    },
+    {
+     "id": "b01cc9b",
+     "elType": "widget",
+     "settings": {
+      "title": "Join the Mailing List",
+      "header_size": "h2",
+      "align": "center",
+      "title_color": "#FFFFFF",
+      "typography_typography": "custom",
+      "typography_font_family": "Playfair Display",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 36,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 28,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.2,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "heading"
+    },
+    {
+     "id": "6d8cdb1",
+     "elType": "widget",
+     "settings": {
+      "editor": "<p>Receive this prayer and others like it, along with Bible teaching, new resources, and ministry updates.</p>",
+      "align": "center",
+      "text_color": "#D9DCE3",
+      "typography_typography": "custom",
+      "typography_font_family": "Lato",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 17,
+       "sizes": []
+      },
+      "typography_font_weight": "400",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 16,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.7,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "text-editor"
+    },
+    {
+     "id": "461a2a3",
+     "elType": "widget",
+     "settings": {
+      "html": "<div style=\"max-width:620px;margin:0 auto;padding:28px;border:2px dashed #B8893B;border-radius:4px;background:#fff;text-align:center;font-family:Lato,sans-serif;color:#5A6070;\">\n<!-- REPLACE with the MailerLite \"Prayer\" form (embed code or plugin shortcode). Put signups in a group such as \"Prayer for NYS\". -->\n<strong style=\"color:#1F2A44;\">MailerLite signup form goes here</strong><br><span style=\"font-size:14px;\">First name + Email + \"Count Me In\" button</span></div>"
+     },
+     "elements": [],
+     "widgetType": "html"
+    },
+    {
+     "id": "e8088de",
+     "elType": "widget",
+     "settings": {
+      "editor": "<p>No cost. Unsubscribe anytime.</p>",
+      "align": "center",
+      "text_color": "#D4AE6B",
+      "typography_typography": "custom",
+      "typography_font_family": "Lato",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 14,
+       "sizes": []
+      },
+      "typography_font_weight": "400",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 16,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.7,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "text-editor"
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "d4ca5eb",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "flex_align_items": "center",
+    "flex_justify_content": "flex-start",
+    "flex_gap": {
+     "unit": "px",
+     "size": 14,
+     "column": "14",
+     "row": "14",
+     "isLinked": true
+    },
+    "boxed_width": {
+     "unit": "px",
+     "size": 1140,
+     "sizes": []
+    },
+    "background_background": "classic",
+    "background_color": "#F7F3EC",
+    "padding": {
+     "unit": "px",
+     "top": "80",
+     "right": "20",
+     "bottom": "90",
+     "left": "20",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "20",
+     "bottom": "48",
+     "left": "20",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "07f316e",
+     "elType": "widget",
+     "settings": {
+      "title": "Go Deeper",
+      "header_size": "p",
+      "align": "center",
+      "title_color": "#B8893B",
+      "typography_typography": "custom",
+      "typography_font_family": "Lato",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 14,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 13,
+       "sizes": []
+      },
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": 3,
+       "sizes": []
+      },
+      "typography_text_transform": "uppercase",
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.4,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "heading"
+    },
+    {
+     "id": "372dc4c",
+     "elType": "widget",
+     "settings": {
+      "title": "More Free Resources",
+      "header_size": "h2",
+      "align": "center",
+      "title_color": "#1F2A44",
+      "typography_typography": "custom",
+      "typography_font_family": "Playfair Display",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 34,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 26,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.2,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "heading"
+    },
+    {
+     "id": "ac151e3",
+     "elType": "widget",
+     "settings": {
+      "editor": "<p>Six free studies on knowing God, maturity in Christ, and discipleship.</p>",
+      "align": "center",
+      "text_color": "#5A6070",
+      "typography_typography": "custom",
+      "typography_font_family": "Lato",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 18,
+       "sizes": []
+      },
+      "typography_font_weight": "400",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 16,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.7,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "text-editor"
+    },
+    {
+     "id": "dafdd0f",
+     "elType": "widget",
+     "settings": {
+      "text": "Free Resources",
+      "link": {
+       "url": "/free_resources/",
+       "is_external": "",
+       "nofollow": "",
+       "custom_attributes": ""
+      },
+      "align": "center",
+      "align_mobile": "center",
+      "background_color": "#B8893B",
+      "button_text_color": "#FFFFFF",
+      "button_background_hover_color": "#151D30",
+      "hover_color": "#FFFFFF",
+      "border_border": "solid",
+      "border_width": {
+       "unit": "px",
+       "top": "2",
+       "right": "2",
+       "bottom": "2",
+       "left": "2",
+       "isLinked": true
+      },
+      "border_color": "#B8893B",
+      "button_hover_border_color": "#151D30",
+      "border_radius": {
+       "unit": "px",
+       "top": "2",
+       "right": "2",
+       "bottom": "2",
+       "left": "2",
+       "isLinked": true
+      },
+      "text_padding": {
+       "unit": "px",
+       "top": "16",
+       "right": "32",
+       "bottom": "16",
+       "left": "32",
+       "isLinked": false
+      },
+      "typography_typography": "custom",
+      "typography_font_family": "Lato",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 14,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 13,
+       "sizes": []
+      },
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": 2,
+       "sizes": []
+      },
+      "typography_text_transform": "uppercase"
+     },
+     "elements": [],
+     "widgetType": "button"
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": {
+  "hide_title": "yes",
+  "template": "elementor_header_footer"
+ },
+ "version": "0.4",
+ "title": "Richard Brokaw – Prayer for the Babies in NYS",
+ "type": "page"
+}

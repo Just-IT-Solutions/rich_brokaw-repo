@@ -1,0 +1,2018 @@
+{
+ "content": [
+  {
+   "id": "8daf791",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "row",
+    "flex_align_items": "center",
+    "flex_justify_content": "flex-start",
+    "flex_gap": {
+     "unit": "px",
+     "size": 60,
+     "column": "60",
+     "row": "60",
+     "isLinked": true
+    },
+    "boxed_width": {
+     "unit": "px",
+     "size": 1140,
+     "sizes": []
+    },
+    "flex_direction_mobile": "column",
+    "flex_wrap": "wrap",
+    "background_background": "classic",
+    "background_color": "#1F2A44",
+    "padding": {
+     "unit": "px",
+     "top": "90",
+     "right": "20",
+     "bottom": "90",
+     "left": "20",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "20",
+     "bottom": "48",
+     "left": "20",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "8422ccd",
+     "elType": "container",
+     "settings": {
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "flex_align_items": "center",
+      "flex_justify_content": "flex-start",
+      "flex_gap": {
+       "unit": "px",
+       "size": 20,
+       "column": "20",
+       "row": "20",
+       "isLinked": true
+      },
+      "width": {
+       "unit": "%",
+       "size": 38,
+       "sizes": []
+      },
+      "width_mobile": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      }
+     },
+     "elements": [
+      {
+       "id": "938c433",
+       "elType": "widget",
+       "settings": {
+        "image": {
+         "url": "/wp-content/uploads/site-images/richard-headshot.jpg",
+         "id": "",
+         "alt": "Richard Brokaw",
+         "source": "url"
+        },
+        "image_size": "full",
+        "align": "center",
+        "width": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "image_box_shadow_box_shadow_type": "yes",
+        "image_box_shadow_box_shadow": {
+         "horizontal": 0,
+         "vertical": 20,
+         "blur": 40,
+         "spread": -10,
+         "color": "rgba(0,0,0,0.35)"
+        }
+       },
+       "elements": [],
+       "widgetType": "image"
+      }
+     ],
+     "isInner": true
+    },
+    {
+     "id": "aa71cc9",
+     "elType": "container",
+     "settings": {
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "flex_align_items": "flex-start",
+      "flex_justify_content": "flex-start",
+      "flex_gap": {
+       "unit": "px",
+       "size": 18,
+       "column": "18",
+       "row": "18",
+       "isLinked": true
+      },
+      "width": {
+       "unit": "%",
+       "size": 56,
+       "sizes": []
+      },
+      "width_mobile": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      }
+     },
+     "elements": [
+      {
+       "id": "9f142ef",
+       "elType": "widget",
+       "settings": {
+        "title": "About Richard",
+        "header_size": "p",
+        "align": "left",
+        "title_color": "#B8893B",
+        "typography_typography": "custom",
+        "typography_font_family": "Lato",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 14,
+         "sizes": []
+        },
+        "typography_font_weight": "700",
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 13,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 3,
+         "sizes": []
+        },
+        "typography_text_transform": "uppercase",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.4,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "fc47b1a",
+       "elType": "widget",
+       "settings": {
+        "title": "A Disciple of Christ",
+        "header_size": "h1",
+        "align": "left",
+        "title_color": "#FFFFFF",
+        "typography_typography": "custom",
+        "typography_font_family": "Playfair Display",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 52,
+         "sizes": []
+        },
+        "typography_font_weight": "700",
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 36,
+         "sizes": []
+        },
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.2,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "9cbb09f",
+       "elType": "widget",
+       "settings": {
+        "color": "#B8893B",
+        "weight": {
+         "unit": "px",
+         "size": 2,
+         "sizes": []
+        },
+        "width": {
+         "unit": "px",
+         "size": 80,
+         "sizes": []
+        },
+        "align": "left",
+        "gap": {
+         "unit": "px",
+         "size": 6,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "divider"
+      },
+      {
+       "id": "0148856",
+       "elType": "widget",
+       "settings": {
+        "editor": "<p>I am a disciple of Christ and do not call myself a Christian. A Christian can mean many things today, but a disciple of Christ can mean one thing: you follow Jesus Christ. That is who I am.</p>",
+        "align": "left",
+        "text_color": "#FFFFFF",
+        "typography_typography": "custom",
+        "typography_font_family": "Lato",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        },
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.6,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      },
+      {
+       "id": "6ee1950",
+       "elType": "widget",
+       "settings": {
+        "title": "Author • Teacher • Disciple-Maker",
+        "header_size": "p",
+        "align": "left",
+        "title_color": "#D4AE6B",
+        "typography_typography": "custom",
+        "typography_font_family": "Lato",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 14,
+         "sizes": []
+        },
+        "typography_font_weight": "700",
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 13,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 3,
+         "sizes": []
+        },
+        "typography_text_transform": "uppercase",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.4,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      }
+     ],
+     "isInner": true
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "da16c08",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "row",
+    "flex_align_items": "flex-start",
+    "flex_justify_content": "flex-start",
+    "flex_gap": {
+     "unit": "px",
+     "size": 24,
+     "column": "24",
+     "row": "24",
+     "isLinked": true
+    },
+    "boxed_width": {
+     "unit": "px",
+     "size": 1140,
+     "sizes": []
+    },
+    "flex_direction_mobile": "column",
+    "flex_wrap": "wrap",
+    "background_background": "classic",
+    "background_color": "#FFFFFF",
+    "padding": {
+     "unit": "px",
+     "top": "50",
+     "right": "20",
+     "bottom": "50",
+     "left": "20",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "20",
+     "bottom": "48",
+     "left": "20",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "f1e470b",
+     "elType": "container",
+     "settings": {
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "flex_align_items": "flex-start",
+      "flex_justify_content": "flex-start",
+      "flex_gap": {
+       "unit": "px",
+       "size": 4,
+       "column": "4",
+       "row": "4",
+       "isLinked": true
+      },
+      "width": {
+       "unit": "%",
+       "size": 23,
+       "sizes": []
+      },
+      "width_mobile": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "border_border": "solid",
+      "border_width": {
+       "unit": "px",
+       "top": "2",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": false
+      },
+      "border_color": "#B8893B",
+      "padding": {
+       "unit": "px",
+       "top": "14",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": false
+      },
+      "width_tablet": {
+       "unit": "%",
+       "size": 47,
+       "sizes": []
+      }
+     },
+     "elements": [
+      {
+       "id": "ea9ec38",
+       "elType": "widget",
+       "settings": {
+        "title": "45+ years",
+        "header_size": "p",
+        "align": "left",
+        "title_color": "#1F2A44",
+        "typography_typography": "custom",
+        "typography_font_family": "Playfair Display",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 26,
+         "sizes": []
+        },
+        "typography_font_weight": "700",
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 24,
+         "sizes": []
+        },
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.2,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "f764b36",
+       "elType": "widget",
+       "settings": {
+        "editor": "<p>teaching the Word of God</p>",
+        "align": "left",
+        "text_color": "#5A6070",
+        "typography_typography": "custom",
+        "typography_font_family": "Lato",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 15,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        },
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.5,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      }
+     ],
+     "isInner": true
+    },
+    {
+     "id": "d0b0fd1",
+     "elType": "container",
+     "settings": {
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "flex_align_items": "flex-start",
+      "flex_justify_content": "flex-start",
+      "flex_gap": {
+       "unit": "px",
+       "size": 4,
+       "column": "4",
+       "row": "4",
+       "isLinked": true
+      },
+      "width": {
+       "unit": "%",
+       "size": 23,
+       "sizes": []
+      },
+      "width_mobile": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "border_border": "solid",
+      "border_width": {
+       "unit": "px",
+       "top": "2",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": false
+      },
+      "border_color": "#B8893B",
+      "padding": {
+       "unit": "px",
+       "top": "14",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": false
+      },
+      "width_tablet": {
+       "unit": "%",
+       "size": 47,
+       "sizes": []
+      }
+     },
+     "elements": [
+      {
+       "id": "a63bd29",
+       "elType": "widget",
+       "settings": {
+        "title": "Nearly 20 years",
+        "header_size": "p",
+        "align": "left",
+        "title_color": "#1F2A44",
+        "typography_typography": "custom",
+        "typography_font_family": "Playfair Display",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 26,
+         "sizes": []
+        },
+        "typography_font_weight": "700",
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 24,
+         "sizes": []
+        },
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.2,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "fbef5d6",
+       "elType": "widget",
+       "settings": {
+        "editor": "<p>discipling men from prison and drug rehabilitation</p>",
+        "align": "left",
+        "text_color": "#5A6070",
+        "typography_typography": "custom",
+        "typography_font_family": "Lato",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 15,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        },
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.5,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      }
+     ],
+     "isInner": true
+    },
+    {
+     "id": "cdfd9b7",
+     "elType": "container",
+     "settings": {
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "flex_align_items": "flex-start",
+      "flex_justify_content": "flex-start",
+      "flex_gap": {
+       "unit": "px",
+       "size": 4,
+       "column": "4",
+       "row": "4",
+       "isLinked": true
+      },
+      "width": {
+       "unit": "%",
+       "size": 23,
+       "sizes": []
+      },
+      "width_mobile": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "border_border": "solid",
+      "border_width": {
+       "unit": "px",
+       "top": "2",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": false
+      },
+      "border_color": "#B8893B",
+      "padding": {
+       "unit": "px",
+       "top": "14",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": false
+      },
+      "width_tablet": {
+       "unit": "%",
+       "size": 47,
+       "sizes": []
+      }
+     },
+     "elements": [
+      {
+       "id": "caa975d",
+       "elType": "widget",
+       "settings": {
+        "title": "January 2025",
+        "header_size": "p",
+        "align": "left",
+        "title_color": "#1F2A44",
+        "typography_typography": "custom",
+        "typography_font_family": "Playfair Display",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 26,
+         "sizes": []
+        },
+        "typography_font_weight": "700",
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 24,
+         "sizes": []
+        },
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.2,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "0432125",
+       "elType": "widget",
+       "settings": {
+        "editor": "<p><em>My Letter to You</em></p>",
+        "align": "left",
+        "text_color": "#5A6070",
+        "typography_typography": "custom",
+        "typography_font_family": "Lato",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 15,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        },
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.5,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      }
+     ],
+     "isInner": true
+    },
+    {
+     "id": "a54c5ec",
+     "elType": "container",
+     "settings": {
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "flex_align_items": "flex-start",
+      "flex_justify_content": "flex-start",
+      "flex_gap": {
+       "unit": "px",
+       "size": 4,
+       "column": "4",
+       "row": "4",
+       "isLinked": true
+      },
+      "width": {
+       "unit": "%",
+       "size": 23,
+       "sizes": []
+      },
+      "width_mobile": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "border_border": "solid",
+      "border_width": {
+       "unit": "px",
+       "top": "2",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": false
+      },
+      "border_color": "#B8893B",
+      "padding": {
+       "unit": "px",
+       "top": "14",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": false
+      },
+      "width_tablet": {
+       "unit": "%",
+       "size": 47,
+       "sizes": []
+      }
+     },
+     "elements": [
+      {
+       "id": "b05ceb1",
+       "elType": "widget",
+       "settings": {
+        "title": "September 2026",
+        "header_size": "p",
+        "align": "left",
+        "title_color": "#1F2A44",
+        "typography_typography": "custom",
+        "typography_font_family": "Playfair Display",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 26,
+         "sizes": []
+        },
+        "typography_font_weight": "700",
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 24,
+         "sizes": []
+        },
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.2,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "a82b677",
+       "elType": "widget",
+       "settings": {
+        "editor": "<p><em>Why the Rapture Tarries</em> completed</p>",
+        "align": "left",
+        "text_color": "#5A6070",
+        "typography_typography": "custom",
+        "typography_font_family": "Lato",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 15,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        },
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.5,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      }
+     ],
+     "isInner": true
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "100b4b3",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "flex_align_items": "flex-start",
+    "flex_justify_content": "flex-start",
+    "flex_gap": {
+     "unit": "px",
+     "size": 14,
+     "column": "14",
+     "row": "14",
+     "isLinked": true
+    },
+    "boxed_width": {
+     "unit": "px",
+     "size": 760,
+     "sizes": []
+    },
+    "background_background": "classic",
+    "background_color": "#F7F3EC",
+    "padding": {
+     "unit": "px",
+     "top": "80",
+     "right": "20",
+     "bottom": "80",
+     "left": "20",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "20",
+     "bottom": "48",
+     "left": "20",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "1411507",
+     "elType": "widget",
+     "settings": {
+      "title": "Pleasing God, Not Man",
+      "header_size": "p",
+      "align": "left",
+      "title_color": "#B8893B",
+      "typography_typography": "custom",
+      "typography_font_family": "Lato",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 14,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 13,
+       "sizes": []
+      },
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": 3,
+       "sizes": []
+      },
+      "typography_text_transform": "uppercase",
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.4,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "heading"
+    },
+    {
+     "id": "6ca5abd",
+     "elType": "widget",
+     "settings": {
+      "editor": "<p>Because that is true, I listen to what the Holy Spirit tells me, and I do it. That has got me into some conflicts with people, and yet, when I stood my ground on what the Holy Spirit told me, it caused a shift in my soul. I no longer sought to please man, but to please God.</p>",
+      "align": "left",
+      "text_color": "#2B2B2B",
+      "typography_typography": "custom",
+      "typography_font_family": "Lato",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 19,
+       "sizes": []
+      },
+      "typography_font_weight": "400",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 16,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.8,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "text-editor"
+    },
+    {
+     "id": "dc2dfba",
+     "elType": "widget",
+     "settings": {
+      "space": {
+       "unit": "px",
+       "size": 16,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "spacer"
+    },
+    {
+     "id": "2756b68",
+     "elType": "widget",
+     "settings": {
+      "title": "A New Realm of Destiny",
+      "header_size": "p",
+      "align": "left",
+      "title_color": "#B8893B",
+      "typography_typography": "custom",
+      "typography_font_family": "Lato",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 14,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 13,
+       "sizes": []
+      },
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": 3,
+       "sizes": []
+      },
+      "typography_text_transform": "uppercase",
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.4,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "heading"
+    },
+    {
+     "id": "cc4458a",
+     "elType": "widget",
+     "settings": {
+      "editor": "<p>This has led me in the past decade into a new realm of my destiny. I wrote my first book in January 2025, <em>My Letter to You</em>, based on the Seven Letters to the Churches. This has been after over 45 years of teaching the Word of God. Then, I finished my second book in September 2026, <em>Why the Rapture Tarries</em>. I sense there is more to come, and so I will continue this journey with the Lord to do what He tells me to do.</p>",
+      "align": "left",
+      "text_color": "#2B2B2B",
+      "typography_typography": "custom",
+      "typography_font_family": "Lato",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 19,
+       "sizes": []
+      },
+      "typography_font_weight": "400",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 16,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.8,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "text-editor"
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "1ea523c",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "flex_align_items": "center",
+    "flex_justify_content": "flex-start",
+    "flex_gap": {
+     "unit": "px",
+     "size": 18,
+     "column": "18",
+     "row": "18",
+     "isLinked": true
+    },
+    "boxed_width": {
+     "unit": "px",
+     "size": 780,
+     "sizes": []
+    },
+    "background_background": "classic",
+    "background_color": "#EEF0F4",
+    "padding": {
+     "unit": "px",
+     "top": "90",
+     "right": "20",
+     "bottom": "90",
+     "left": "20",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "20",
+     "bottom": "48",
+     "left": "20",
+     "isLinked": false
+    },
+    "_element_id": "why-i-write"
+   },
+   "elements": [
+    {
+     "id": "519da95",
+     "elType": "widget",
+     "settings": {
+      "title": "Why I Write",
+      "header_size": "p",
+      "align": "center",
+      "title_color": "#B8893B",
+      "typography_typography": "custom",
+      "typography_font_family": "Lato",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 14,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 13,
+       "sizes": []
+      },
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": 3,
+       "sizes": []
+      },
+      "typography_text_transform": "uppercase",
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.4,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "heading"
+    },
+    {
+     "id": "03fe383",
+     "elType": "widget",
+     "settings": {
+      "title": "More Than Information About God",
+      "header_size": "h2",
+      "align": "center",
+      "title_color": "#1F2A44",
+      "typography_typography": "custom",
+      "typography_font_family": "Playfair Display",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 36,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 28,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.2,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "heading"
+    },
+    {
+     "id": "ae57659",
+     "elType": "widget",
+     "settings": {
+      "color": "#B8893B",
+      "weight": {
+       "unit": "px",
+       "size": 2,
+       "sizes": []
+      },
+      "width": {
+       "unit": "px",
+       "size": 80,
+       "sizes": []
+      },
+      "align": "center",
+      "gap": {
+       "unit": "px",
+       "size": 6,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "divider"
+    },
+    {
+     "id": "860a3d5",
+     "elType": "widget",
+     "settings": {
+      "editor": "<p>For more than 45 years, I have had the privilege of teaching the Word of God. For more than 15 years, I have also had the privilege of discipling men coming from prison and drug rehabilitation.</p><p>Those years have taught me something important: people don't simply need more information about God. They need to discover what it means to follow Jesus Christ, grow in spiritual maturity, and live out the purposes of God.</p><p><strong>That conviction is at the heart of my writing and ministry.</strong></p>",
+      "align": "center",
+      "text_color": "#2B2B2B",
+      "typography_typography": "custom",
+      "typography_font_family": "Lato",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 18,
+       "sizes": []
+      },
+      "typography_font_weight": "400",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 16,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.7,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "text-editor"
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "5614625",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "row",
+    "flex_align_items": "center",
+    "flex_justify_content": "flex-start",
+    "flex_gap": {
+     "unit": "px",
+     "size": 60,
+     "column": "60",
+     "row": "60",
+     "isLinked": true
+    },
+    "boxed_width": {
+     "unit": "px",
+     "size": 1140,
+     "sizes": []
+    },
+    "flex_direction_mobile": "column",
+    "flex_wrap": "wrap",
+    "background_background": "classic",
+    "background_color": "#FFFFFF",
+    "padding": {
+     "unit": "px",
+     "top": "90",
+     "right": "20",
+     "bottom": "90",
+     "left": "20",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "20",
+     "bottom": "48",
+     "left": "20",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "94990aa",
+     "elType": "container",
+     "settings": {
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "flex_align_items": "flex-start",
+      "flex_justify_content": "flex-start",
+      "flex_gap": {
+       "unit": "px",
+       "size": 14,
+       "column": "14",
+       "row": "14",
+       "isLinked": true
+      },
+      "width": {
+       "unit": "%",
+       "size": 56,
+       "sizes": []
+      },
+      "width_mobile": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      }
+     },
+     "elements": [
+      {
+       "id": "a86a2d5",
+       "elType": "widget",
+       "settings": {
+        "title": "Discipling Men",
+        "header_size": "p",
+        "align": "left",
+        "title_color": "#B8893B",
+        "typography_typography": "custom",
+        "typography_font_family": "Lato",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 14,
+         "sizes": []
+        },
+        "typography_font_weight": "700",
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 13,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 3,
+         "sizes": []
+        },
+        "typography_text_transform": "uppercase",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.4,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "6bfd0e2",
+       "elType": "widget",
+       "settings": {
+        "title": "Life, Hope, and Love",
+        "header_size": "h2",
+        "align": "left",
+        "title_color": "#1F2A44",
+        "typography_typography": "custom",
+        "typography_font_family": "Playfair Display",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 38,
+         "sizes": []
+        },
+        "typography_font_weight": "700",
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 28,
+         "sizes": []
+        },
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.2,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "cba4f53",
+       "elType": "widget",
+       "settings": {
+        "color": "#B8893B",
+        "weight": {
+         "unit": "px",
+         "size": 2,
+         "sizes": []
+        },
+        "width": {
+         "unit": "px",
+         "size": 80,
+         "sizes": []
+        },
+        "align": "left",
+        "gap": {
+         "unit": "px",
+         "size": 6,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "divider"
+      },
+      {
+       "id": "29bfdbe",
+       "elType": "widget",
+       "settings": {
+        "editor": "<p>For nearly twenty years, I have been discipling men coming from prison and drug rehabilitation. This experience has marked me as I have witnessed miraculous transformations in men who came in one way and, six to nine months later, went out another way—men who now have life, hope, and love. Many are walking out their destiny.</p>",
+        "align": "left",
+        "text_color": "#2B2B2B",
+        "typography_typography": "custom",
+        "typography_font_family": "Lato",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 19,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        },
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.8,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      }
+     ],
+     "isInner": true
+    },
+    {
+     "id": "68b1c6f",
+     "elType": "container",
+     "settings": {
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "flex_align_items": "flex-start",
+      "flex_justify_content": "flex-start",
+      "flex_gap": {
+       "unit": "px",
+       "size": 20,
+       "column": "20",
+       "row": "20",
+       "isLinked": true
+      },
+      "width": {
+       "unit": "%",
+       "size": 38,
+       "sizes": []
+      },
+      "width_mobile": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "border_border": "solid",
+      "border_width": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "3",
+       "isLinked": false
+      },
+      "border_color": "#B8893B",
+      "padding": {
+       "unit": "px",
+       "top": "6",
+       "right": "0",
+       "bottom": "6",
+       "left": "28",
+       "isLinked": false
+      }
+     },
+     "elements": [
+      {
+       "id": "7c742ef",
+       "elType": "widget",
+       "settings": {
+        "title": "“Men who came in one way and, six to nine months later, went out another way.”",
+        "header_size": "p",
+        "align": "left",
+        "title_color": "#1F2A44",
+        "typography_typography": "custom",
+        "typography_font_family": "Playfair Display",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 28,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.4,
+         "sizes": []
+        },
+        "typography_font_style": "italic"
+       },
+       "elements": [],
+       "widgetType": "heading"
+      }
+     ],
+     "isInner": true
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "cad3f01",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "flex_align_items": "center",
+    "flex_justify_content": "flex-start",
+    "flex_gap": {
+     "unit": "px",
+     "size": 16,
+     "column": "16",
+     "row": "16",
+     "isLinked": true
+    },
+    "boxed_width": {
+     "unit": "px",
+     "size": 820,
+     "sizes": []
+    },
+    "background_background": "classic",
+    "background_color": "#151D30",
+    "padding": {
+     "unit": "px",
+     "top": "100",
+     "right": "20",
+     "bottom": "100",
+     "left": "20",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "20",
+     "bottom": "48",
+     "left": "20",
+     "isLinked": false
+    },
+    "_element_id": "the-message"
+   },
+   "elements": [
+    {
+     "id": "4492edd",
+     "elType": "widget",
+     "settings": {
+      "title": "The Message",
+      "header_size": "p",
+      "align": "center",
+      "title_color": "#B8893B",
+      "typography_typography": "custom",
+      "typography_font_family": "Lato",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 14,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 13,
+       "sizes": []
+      },
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": 3,
+       "sizes": []
+      },
+      "typography_text_transform": "uppercase",
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.4,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "heading"
+    },
+    {
+     "id": "d8fcfeb",
+     "elType": "widget",
+     "settings": {
+      "title": "Christ in You, the Hope of Glory",
+      "header_size": "h2",
+      "align": "center",
+      "title_color": "#FFFFFF",
+      "typography_typography": "custom",
+      "typography_font_family": "Playfair Display",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 42,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 30,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.2,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "heading"
+    },
+    {
+     "id": "75dcc03",
+     "elType": "widget",
+     "settings": {
+      "color": "#B8893B",
+      "weight": {
+       "unit": "px",
+       "size": 2,
+       "sizes": []
+      },
+      "width": {
+       "unit": "px",
+       "size": 80,
+       "sizes": []
+      },
+      "align": "center",
+      "gap": {
+       "unit": "px",
+       "size": 6,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "divider"
+    },
+    {
+     "id": "bc9f188",
+     "elType": "widget",
+     "settings": {
+      "editor": "<p>This has deeply affected the direction of my life. I have no other goal in life than to see the fruit of believers coming into the fullness of Christ through discipleship. As Paul wrote in Colossians 1:25-29, it bears witness in my soul.</p>",
+      "align": "center",
+      "text_color": "#D9DCE3",
+      "typography_typography": "custom",
+      "typography_font_family": "Lato",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 19,
+       "sizes": []
+      },
+      "typography_font_weight": "400",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 16,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.7,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "text-editor"
+    },
+    {
+     "id": "810f48c",
+     "elType": "widget",
+     "settings": {
+      "space": {
+       "unit": "px",
+       "size": 10,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "spacer"
+    },
+    {
+     "id": "d2b81b4",
+     "elType": "widget",
+     "settings": {
+      "editor": "<p>“Of this Ekklesia, I have been made a disciple maker, according to the stewardship from God bestowed on me, for your benefit, so that I might fully carry out the teaching of God's Word, that is, the mystery that has been hidden in past ages and generations, but has now been manifest in the saints. To whom God willed to make known the riches of the glory of this mystery, which is Christ in you, the hope of Glory! We proclaim Christ!</p><p>Admonishing every man, teaching every man in wisdom, so that we present every man fully grown in Christ. For this purpose, I labor, striving according to His power that works mightily in me.”</p>",
+      "align": "center",
+      "text_color": "#FFFFFF",
+      "typography_typography": "custom",
+      "typography_font_family": "Lato",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 21,
+       "sizes": []
+      },
+      "typography_font_weight": "400",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 16,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.75,
+       "sizes": []
+      },
+      "typography_font_style": "italic"
+     },
+     "elements": [],
+     "widgetType": "text-editor"
+    },
+    {
+     "id": "98d39f5",
+     "elType": "widget",
+     "settings": {
+      "title": "Colossians 1:25-29",
+      "header_size": "p",
+      "align": "center",
+      "title_color": "#D4AE6B",
+      "typography_typography": "custom",
+      "typography_font_family": "Lato",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 14,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 13,
+       "sizes": []
+      },
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": 3,
+       "sizes": []
+      },
+      "typography_text_transform": "uppercase",
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.4,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "heading"
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "a4e6f08",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "flex_align_items": "center",
+    "flex_justify_content": "flex-start",
+    "flex_gap": {
+     "unit": "px",
+     "size": 16,
+     "column": "16",
+     "row": "16",
+     "isLinked": true
+    },
+    "boxed_width": {
+     "unit": "px",
+     "size": 1140,
+     "sizes": []
+    },
+    "background_background": "classic",
+    "background_color": "#F7F3EC",
+    "padding": {
+     "unit": "px",
+     "top": "80",
+     "right": "20",
+     "bottom": "90",
+     "left": "20",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "20",
+     "bottom": "48",
+     "left": "20",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "d0f1645",
+     "elType": "widget",
+     "settings": {
+      "title": "Continue",
+      "header_size": "p",
+      "align": "center",
+      "title_color": "#B8893B",
+      "typography_typography": "custom",
+      "typography_font_family": "Lato",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 14,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 13,
+       "sizes": []
+      },
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": 3,
+       "sizes": []
+      },
+      "typography_text_transform": "uppercase",
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.4,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "heading"
+    },
+    {
+     "id": "b652696",
+     "elType": "widget",
+     "settings": {
+      "title": "Read, Study, or Invite Richard",
+      "header_size": "h2",
+      "align": "center",
+      "title_color": "#1F2A44",
+      "typography_typography": "custom",
+      "typography_font_family": "Playfair Display",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 36,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 28,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.2,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "heading"
+    },
+    {
+     "id": "7a3a75b",
+     "elType": "widget",
+     "settings": {
+      "color": "#B8893B",
+      "weight": {
+       "unit": "px",
+       "size": 2,
+       "sizes": []
+      },
+      "width": {
+       "unit": "px",
+       "size": 80,
+       "sizes": []
+      },
+      "align": "center",
+      "gap": {
+       "unit": "px",
+       "size": 6,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "divider"
+    },
+    {
+     "id": "e369ee8",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "flex_align_items": "center",
+      "flex_justify_content": "center",
+      "flex_gap": {
+       "unit": "px",
+       "size": 16,
+       "column": "16",
+       "row": "16",
+       "isLinked": true
+      },
+      "flex_direction_mobile": "column",
+      "flex_wrap": "wrap"
+     },
+     "elements": [
+      {
+       "id": "07c40b5",
+       "elType": "widget",
+       "settings": {
+        "text": "Explore the Books",
+        "link": {
+         "url": "/books/",
+         "is_external": "",
+         "nofollow": "",
+         "custom_attributes": ""
+        },
+        "align": "center",
+        "align_mobile": "center",
+        "background_color": "#B8893B",
+        "button_text_color": "#FFFFFF",
+        "button_background_hover_color": "#151D30",
+        "hover_color": "#FFFFFF",
+        "border_border": "solid",
+        "border_width": {
+         "unit": "px",
+         "top": "2",
+         "right": "2",
+         "bottom": "2",
+         "left": "2",
+         "isLinked": true
+        },
+        "border_color": "#B8893B",
+        "button_hover_border_color": "#151D30",
+        "border_radius": {
+         "unit": "px",
+         "top": "2",
+         "right": "2",
+         "bottom": "2",
+         "left": "2",
+         "isLinked": true
+        },
+        "text_padding": {
+         "unit": "px",
+         "top": "16",
+         "right": "32",
+         "bottom": "16",
+         "left": "32",
+         "isLinked": false
+        },
+        "typography_typography": "custom",
+        "typography_font_family": "Lato",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 14,
+         "sizes": []
+        },
+        "typography_font_weight": "700",
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 13,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 2,
+         "sizes": []
+        },
+        "typography_text_transform": "uppercase"
+       },
+       "elements": [],
+       "widgetType": "button"
+      },
+      {
+       "id": "b3639e7",
+       "elType": "widget",
+       "settings": {
+        "text": "Free Resources",
+        "link": {
+         "url": "/free_resources/",
+         "is_external": "",
+         "nofollow": "",
+         "custom_attributes": ""
+        },
+        "align": "center",
+        "align_mobile": "center",
+        "background_color": "rgba(0,0,0,0)",
+        "button_text_color": "#1F2A44",
+        "button_background_hover_color": "#1F2A44",
+        "hover_color": "#FFFFFF",
+        "border_border": "solid",
+        "border_width": {
+         "unit": "px",
+         "top": "2",
+         "right": "2",
+         "bottom": "2",
+         "left": "2",
+         "isLinked": true
+        },
+        "border_color": "#1F2A44",
+        "button_hover_border_color": "#1F2A44",
+        "border_radius": {
+         "unit": "px",
+         "top": "2",
+         "right": "2",
+         "bottom": "2",
+         "left": "2",
+         "isLinked": true
+        },
+        "text_padding": {
+         "unit": "px",
+         "top": "16",
+         "right": "32",
+         "bottom": "16",
+         "left": "32",
+         "isLinked": false
+        },
+        "typography_typography": "custom",
+        "typography_font_family": "Lato",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 14,
+         "sizes": []
+        },
+        "typography_font_weight": "700",
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 13,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 2,
+         "sizes": []
+        },
+        "typography_text_transform": "uppercase"
+       },
+       "elements": [],
+       "widgetType": "button"
+      },
+      {
+       "id": "5093d75",
+       "elType": "widget",
+       "settings": {
+        "text": "Invite Richard to Speak",
+        "link": {
+         "url": "/for-churches/#speaking",
+         "is_external": "",
+         "nofollow": "",
+         "custom_attributes": ""
+        },
+        "align": "center",
+        "align_mobile": "center",
+        "background_color": "rgba(0,0,0,0)",
+        "button_text_color": "#1F2A44",
+        "button_background_hover_color": "#1F2A44",
+        "hover_color": "#FFFFFF",
+        "border_border": "solid",
+        "border_width": {
+         "unit": "px",
+         "top": "2",
+         "right": "2",
+         "bottom": "2",
+         "left": "2",
+         "isLinked": true
+        },
+        "border_color": "#1F2A44",
+        "button_hover_border_color": "#1F2A44",
+        "border_radius": {
+         "unit": "px",
+         "top": "2",
+         "right": "2",
+         "bottom": "2",
+         "left": "2",
+         "isLinked": true
+        },
+        "text_padding": {
+         "unit": "px",
+         "top": "16",
+         "right": "32",
+         "bottom": "16",
+         "left": "32",
+         "isLinked": false
+        },
+        "typography_typography": "custom",
+        "typography_font_family": "Lato",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 14,
+         "sizes": []
+        },
+        "typography_font_weight": "700",
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 13,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 2,
+         "sizes": []
+        },
+        "typography_text_transform": "uppercase"
+       },
+       "elements": [],
+       "widgetType": "button"
+      }
+     ],
+     "isInner": true
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": {
+  "hide_title": "yes",
+  "template": "elementor_header_footer"
+ },
+ "version": "0.4",
+ "title": "Richard Brokaw – About Richard",
+ "type": "page"
+}

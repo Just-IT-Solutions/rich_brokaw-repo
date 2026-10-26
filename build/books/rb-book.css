@@ -1,0 +1,69 @@
+/* ===== Richard Brokaw – interactive book sample (rb-book) ===== */
+.rb-book { --paper: #FBF8F1; --paper-edge: #E9E2D2; --ink: #2B2B2B; --rule: #B8893B; --navy: #1F2A44;
+  position: relative; width: 100%; display: flex; flex-direction: column; align-items: center; gap: 14px; }
+.rb-book .rb-src { display: none; }
+.rb-clip { width: 100%; display: flex; justify-content: center; overflow: visible; padding-block: 8px 22px; }
+.rb-book.is-narrow .rb-clip { overflow: hidden; }
+.rb-stage { position: relative; width: calc(var(--w) * 2); height: calc(var(--w) * 1.5); perspective: 2200px; max-width: 100%; }
+.rb-book.is-narrow .rb-stage { width: var(--w); }
+
+.rb-book3d { position: absolute; top: 0; left: var(--w); width: var(--w); height: 100%;
+  transform-style: preserve-3d; transition: transform .7s cubic-bezier(.3,.7,.2,1); }
+.rb-book.is-narrow .rb-book3d { left: 0; }
+.rb-book.is-closed .rb-book3d { transform: translateX(calc(var(--w) * -0.5)); }
+.rb-book.is-narrow.is-closed .rb-book3d { transform: none; }
+
+/* page block under the leaves: thickness + shadow */
+.rb-block { position: absolute; inset: 0; background: var(--paper); border-radius: 0 3px 3px 0;
+  box-shadow: 0 18px 40px -12px rgba(0,0,0,.45), inset 0 0 0 1px var(--paper-edge); }
+.rb-block::after { content: ""; position: absolute; top: 3px; bottom: 3px; right: -7px; width: 7px; border-radius: 0 2px 2px 0;
+  background: repeating-linear-gradient(90deg, #f3eee3 0 1px, #d9d0bd 1px 2px); box-shadow: 2px 0 4px rgba(0,0,0,.15); }
+
+.rb-leaf { position: absolute; inset: 0; transform-origin: left center; transform-style: preserve-3d;
+  transition: transform .9s cubic-bezier(.45,.05,.2,1); cursor: pointer; }
+.rb-leaf.is-flipped { transform: rotateY(-180deg); }
+.rb-face { position: absolute; inset: 0; backface-visibility: hidden; -webkit-backface-visibility: hidden; overflow: hidden; }
+.rb-face.back { transform: rotateY(180deg); }
+.rb-face.paper { background: var(--paper); color: var(--ink); }
+.rb-face.front.paper { border-radius: 0 3px 3px 0; box-shadow: inset 14px 0 18px -14px rgba(0,0,0,.28); }
+.rb-face.back.paper { border-radius: 3px 0 0 3px; box-shadow: inset -14px 0 18px -14px rgba(0,0,0,.28); }
+.rb-face.cover { border-radius: 2px 4px 4px 2px; background: var(--navy); }
+.rb-face.cover img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.rb-face.cover::after { content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(90deg, rgba(0,0,0,.35) 0, rgba(255,255,255,.12) 3%, rgba(0,0,0,0) 7%, rgba(0,0,0,0) 94%, rgba(0,0,0,.18) 100%); }
+.rb-face.inside-cover { background: #EFE8D8; }
+
+/* hover peek: lift the cover when closed */
+@media (hover: hover) {
+  .rb-book.is-closed .rb-stage:hover .rb-leaf.is-cover { transform: rotateY(-32deg); }
+}
+.rb-book.is-closed .rb-leaf.is-cover:focus-visible { outline: 3px solid #D4AE6B; outline-offset: 4px; }
+
+/* page typography: sizes scale with the page width */
+.rb-pg { position: absolute; inset: 0; padding: calc(var(--w) * .1) calc(var(--w) * .09) calc(var(--w) * .12);
+  font: calc(var(--w) * .043)/1.6 Georgia, "Times New Roman", serif; display: flex; flex-direction: column; gap: .7em; }
+.rb-pg h3 { font: 700 1.5em/1.2 "Playfair Display", Georgia, serif; color: var(--navy); margin: 0; text-wrap: balance; }
+.rb-pg h4 { font: 700 .72em/1.3 Lato, Arial, sans-serif; letter-spacing: .2em; text-transform: uppercase; color: var(--rule); margin: 0; }
+.rb-pg p { margin: 0; }
+.rb-pg .rb-ph { border: 1px dashed #C9BFA9; padding: .8em; color: #7a7364; font-style: italic; flex: 1; display: grid; place-items: center; text-align: center; }
+.rb-pg .rb-folio { position: absolute; bottom: calc(var(--w) * .05); left: 0; right: 0; text-align: center; font-size: .75em; color: #9a9282; }
+.rb-pg.title { align-items: center; justify-content: center; text-align: center; }
+.rb-pg.title hr { width: 30%; border: 0; border-top: 1px solid var(--rule); margin: .4em 0; }
+.rb-pg.title .sub { font-style: italic; color: #5A6070; font-size: .9em; }
+.rb-pg.end { align-items: center; justify-content: center; text-align: center; }
+.rb-pg.end a { display: inline-block; margin-top: .6em; background: var(--rule); color: #fff; text-decoration: none;
+  font: 700 .72em/1 Lato, Arial, sans-serif; letter-spacing: .15em; text-transform: uppercase; padding: 1em 1.4em; border-radius: 2px; }
+
+/* controls */
+.rb-hint { font: 700 12px/1.4 Lato, Arial, sans-serif; letter-spacing: 2px; text-transform: uppercase; color: #5A6070; text-align: center; }
+.rb-controls { display: flex; align-items: center; justify-content: center; gap: 10px; flex-wrap: wrap; }
+.rb-controls[hidden] { display: none !important; }
+.rb-controls button { font: 700 12px/1 Lato, Arial, sans-serif; letter-spacing: 1.5px; text-transform: uppercase; cursor: pointer;
+  background: transparent; color: var(--navy); border: 2px solid var(--navy); padding: 11px 16px; border-radius: 2px; }
+.rb-controls button:hover:not(:disabled) { background: var(--navy); color: #fff; }
+.rb-controls button:disabled { opacity: .35; cursor: default; }
+.rb-controls button:focus-visible { outline: 3px solid #D4AE6B; outline-offset: 3px; }
+.rb-count { font: 400 14px/1 Lato, Arial, sans-serif; color: #5A6070; min-width: 9em; text-align: center; font-variant-numeric: tabular-nums; }
+.rb-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+@media (prefers-reduced-motion: reduce) { .rb-book3d, .rb-leaf { transition: none; } }
